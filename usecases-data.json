@@ -1,0 +1,345 @@
+[
+  {
+    "id": "finance",
+    "name": "Finance teams",
+    "short": "Finance",
+    "icon": "◈",
+    "tag": "Close the books, not another spreadsheet.",
+    "description": "Streamline finance workflows while keeping approval and audit controls in place.",
+    "cases": [
+      {
+        "title": "Invoice processing & approvals",
+        "slug": "invoice-processing",
+        "problem": "Supplier invoices arrive by email and need manual data entry, purchase-order checks and approval chasing.",
+        "solution": "Extract key fields, validate against purchase orders, route exceptions for review and prepare draft entries for the finance system.",
+        "stages": [
+          "Capture",
+          "Extract & match",
+          "Approve",
+          "Post draft"
+        ],
+        "value": "Less rekeying, faster approvals and a clearer audit trail."
+      },
+      {
+        "title": "Accounts receivable follow-ups",
+        "slug": "accounts-receivable",
+        "problem": "Overdue invoices are monitored in spreadsheets and reminders depend on someone remembering to send them.",
+        "solution": "Identify overdue balances, prepare or send policy-approved reminders and escalate exceptions to the account owner.",
+        "stages": [
+          "Detect overdue",
+          "Draft reminder",
+          "Escalate",
+          "Track status"
+        ],
+        "value": "More consistent follow-up and improved visibility over outstanding payments."
+      },
+      {
+        "title": "Month-end reporting",
+        "slug": "month-end-reporting",
+        "problem": "Teams copy figures between systems, reconcile reports manually and assemble management packs late in the cycle.",
+        "solution": "Consolidate approved data sources, flag discrepancies and create draft reporting commentary for finance review.",
+        "stages": [
+          "Collect",
+          "Reconcile",
+          "Draft report",
+          "Review"
+        ],
+        "value": "Less spreadsheet administration and more time to investigate variances."
+      }
+    ]
+  },
+  {
+    "id": "assets",
+    "name": "Asset management",
+    "short": "Assets",
+    "icon": "▣",
+    "tag": "Know what you own. Know what comes next.",
+    "description": "Track equipment, warranties, maintenance and replacement decisions in one workflow.",
+    "cases": [
+      {
+        "title": "Asset lifecycle & warranty tracking",
+        "slug": "asset-lifecycle",
+        "problem": "Equipment, computers and vehicle records live in disconnected spreadsheets, making renewals and replacements easy to miss.",
+        "solution": "Consolidate asset records, flag warranty expiry and replacement dates, and create review tasks for asset owners.",
+        "stages": [
+          "Register",
+          "Monitor",
+          "Notify",
+          "Review"
+        ],
+        "value": "Better visibility, planned replacements and fewer missed renewals."
+      },
+      {
+        "title": "Preventive maintenance scheduling",
+        "slug": "preventive-maintenance",
+        "problem": "Maintenance plans rely on calendar reminders and manual coordination of technicians and suppliers.",
+        "solution": "Generate work orders from due dates or usage thresholds, notify owners and track completion evidence.",
+        "stages": [
+          "Due date",
+          "Create job",
+          "Assign",
+          "Close out"
+        ],
+        "value": "More reliable scheduling and clearer maintenance history."
+      },
+      {
+        "title": "Inventory reconciliation",
+        "slug": "inventory-reconciliation",
+        "problem": "Recorded assets do not always match items deployed, in storage or returned by staff.",
+        "solution": "Compare inventory exports, detect missing or duplicate records and create reconciliation tasks for authorised staff.",
+        "stages": [
+          "Import",
+          "Compare",
+          "Flag gaps",
+          "Resolve"
+        ],
+        "value": "More accurate registers and less time spent on manual stocktakes."
+      }
+    ]
+  },
+  {
+    "id": "retail",
+    "name": "Retail",
+    "short": "Retail",
+    "icon": "◇",
+    "tag": "Give store teams time back.",
+    "description": "Connect sales, inventory and customer enquiries without adding extra admin.",
+    "cases": [
+      {
+        "title": "Low-stock & replenishment alerts",
+        "slug": "retail-replenishment",
+        "problem": "Stores discover popular items are out of stock or reorder too late.",
+        "solution": "Monitor inventory thresholds and sales velocity, suggest replenishment quantities and route purchase orders for review.",
+        "stages": [
+          "Monitor stock",
+          "Detect risk",
+          "Suggest reorder",
+          "Approve"
+        ],
+        "value": "Fewer avoidable stockouts and better replenishment planning."
+      },
+      {
+        "title": "Customer enquiry assistant",
+        "slug": "retail-enquiries",
+        "problem": "Staff repeatedly answer the same delivery, returns and product-availability questions.",
+        "solution": "Use a grounded assistant for approved FAQs and send uncertain or sensitive questions to staff.",
+        "stages": [
+          "Receive",
+          "Answer FAQ",
+          "Escalate",
+          "Record"
+        ],
+        "value": "Faster routine responses and more staff capacity for in-store service."
+      },
+      {
+        "title": "Daily store performance digest",
+        "slug": "retail-performance",
+        "problem": "Store managers combine sales, returns and stock figures from multiple reports every day.",
+        "solution": "Prepare a scheduled daily digest, highlight unusual trends and distribute a review-ready summary.",
+        "stages": [
+          "Collect data",
+          "Compare",
+          "Summarise",
+          "Review"
+        ],
+        "value": "Less report preparation and quicker operational decisions."
+      }
+    ]
+  },
+  {
+    "id": "councils",
+    "name": "Local councils",
+    "short": "Councils",
+    "icon": "⌂",
+    "tag": "Make community services easier to navigate.",
+    "description": "Improve request routing, transparent updates and routine administrative workflows.",
+    "cases": [
+      {
+        "title": "Resident request triage",
+        "slug": "resident-request-triage",
+        "problem": "Pothole, footpath, tree and other reports arrive through multiple channels and need manual routing.",
+        "solution": "Classify requests, identify the responsible team, create work items and keep residents informed of progress.",
+        "stages": [
+          "Report issue",
+          "Classify",
+          "Assign team",
+          "Update resident"
+        ],
+        "value": "Faster handoffs and more transparent request tracking."
+      },
+      {
+        "title": "Permit application completeness checks",
+        "slug": "permit-processing",
+        "problem": "Staff spend time checking applications for missing information and chasing supporting documents.",
+        "solution": "Check submissions against published requirements, flag missing items and route completed packs to authorised reviewers.",
+        "stages": [
+          "Submit",
+          "Check documents",
+          "Request missing",
+          "Review"
+        ],
+        "value": "Fewer incomplete applications entering the review queue."
+      },
+      {
+        "title": "Waste & facilities requests",
+        "slug": "council-maintenance",
+        "problem": "Missed-bin reports, damaged assets and park maintenance tasks are tracked across emails and spreadsheets.",
+        "solution": "Standardise intake, assign work orders, track contractor updates and notify requestors on completion.",
+        "stages": [
+          "Capture",
+          "Create work order",
+          "Track",
+          "Notify"
+        ],
+        "value": "More consistent service coordination and fewer status-chasing calls."
+      }
+    ]
+  },
+  {
+    "id": "schools",
+    "name": "Schools",
+    "short": "Schools",
+    "icon": "✳",
+    "tag": "Less admin, more focus on learning.",
+    "description": "Support school operations, parent communications and everyday IT processes.",
+    "cases": [
+      {
+        "title": "Enrolment administration",
+        "slug": "school-enrolment",
+        "problem": "Application forms and required documents need repeated manual checking and follow-up.",
+        "solution": "Securely capture application materials, check completeness and route applications to authorised administration staff.",
+        "stages": [
+          "Collect",
+          "Check",
+          "Follow up",
+          "Review"
+        ],
+        "value": "Less paperwork and clearer status tracking for staff."
+      },
+      {
+        "title": "School knowledge assistant",
+        "slug": "parent-communications",
+        "problem": "Staff answer routine questions about term dates, uniforms, events and school policies many times.",
+        "solution": "Offer an assistant that draws only from approved school information and directs sensitive matters to staff.",
+        "stages": [
+          "Ask",
+          "Search approved info",
+          "Answer",
+          "Escalate"
+        ],
+        "value": "Faster access to school information and fewer repetitive queries."
+      },
+      {
+        "title": "Device allocation & IT requests",
+        "slug": "school-it",
+        "problem": "Laptop allocations, onboarding and IT support requests require coordination across several teams.",
+        "solution": "Track device assignments, collect support requests and orchestrate approved access and setup tasks.",
+        "stages": [
+          "Request",
+          "Approve",
+          "Assign device",
+          "Record"
+        ],
+        "value": "Simpler handoffs and better device accountability."
+      }
+    ]
+  },
+  {
+    "id": "tradies",
+    "name": "Trades & field services",
+    "short": "Tradies",
+    "icon": "⌘",
+    "tag": "Less paperwork. More time on the tools.",
+    "description": "Help small service businesses move from enquiry to quote, job and invoice.",
+    "cases": [
+      {
+        "title": "Enquiry-to-quote workflow",
+        "slug": "tradie-quote",
+        "problem": "Job enquiries arrive by phone, email or social media and quotes are prepared manually after hours.",
+        "solution": "Capture job details in one form, organise requests and prepare a quote draft for the tradesperson to check.",
+        "stages": [
+          "Enquiry",
+          "Capture details",
+          "Draft quote",
+          "Approve"
+        ],
+        "value": "Faster responses and less evening administration."
+      },
+      {
+        "title": "Job scheduling & reminders",
+        "slug": "tradie-scheduling",
+        "problem": "Appointments and customer updates are coordinated through calls and individual text messages.",
+        "solution": "Create appointments from approved jobs, send reminders and provide a simple rescheduling workflow.",
+        "stages": [
+          "Book job",
+          "Confirm",
+          "Remind",
+          "Update"
+        ],
+        "value": "Clearer schedules and fewer missed appointments."
+      },
+      {
+        "title": "Job completion to invoice",
+        "slug": "tradie-invoicing",
+        "problem": "Finished jobs wait to be invoiced while notes, photos and material costs are gathered.",
+        "solution": "Convert approved completion notes, labour and materials into a draft invoice ready for review.",
+        "stages": [
+          "Complete job",
+          "Log costs",
+          "Draft invoice",
+          "Approve"
+        ],
+        "value": "Faster billing and less administrative backlog."
+      }
+    ]
+  },
+  {
+    "id": "healthcare",
+    "name": "Healthcare operations",
+    "short": "Healthcare",
+    "icon": "✚",
+    "tag": "Protect time for the people who matter.",
+    "description": "Focus on non-clinical workflows with privacy safeguards and authorised oversight.",
+    "cases": [
+      {
+        "title": "Appointment administration",
+        "slug": "healthcare-appointments",
+        "problem": "Reception teams spend considerable time handling reminders, reschedules and routine appointment questions.",
+        "solution": "Automate permitted appointment notifications and scheduling follow-ups through approved practice systems.",
+        "stages": [
+          "Book",
+          "Confirm",
+          "Remind",
+          "Reschedule"
+        ],
+        "value": "Less repetitive reception work and clearer appointment communication."
+      },
+      {
+        "title": "Referral administration",
+        "slug": "healthcare-referrals",
+        "problem": "Referral documents need administrative checks, tracking and routing between teams.",
+        "solution": "Securely check required fields, flag missing information and route referrals to authorised staff for clinical assessment.",
+        "stages": [
+          "Receive securely",
+          "Check fields",
+          "Route",
+          "Clinician review"
+        ],
+        "value": "Better referral tracking without automating clinical judgment."
+      },
+      {
+        "title": "Equipment & consumables tracking",
+        "slug": "healthcare-stock",
+        "problem": "Supplies and medical equipment need regular stock checking, maintenance and replenishment.",
+        "solution": "Track thresholds and maintenance dates, create restocking requests and notify responsible staff.",
+        "stages": [
+          "Monitor",
+          "Alert",
+          "Request stock",
+          "Confirm"
+        ],
+        "value": "Better stock visibility and less manual tracking."
+      }
+    ]
+  }
+]

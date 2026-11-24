@@ -1,0 +1,32 @@
+/* Shared industry disclosure, with the existing dark/light palette. */
+.industry-dropdown { position:relative; flex:0 0 auto; }
+.industry-trigger { display:flex; align-items:center; gap:5px; background:transparent; border:0; padding:0; color:#adc0ce; font:inherit; font-size:12px; font-weight:650; letter-spacing:.015em; cursor:pointer; white-space:nowrap; }
+.industry-trigger svg { flex:none; transition:transform .18s ease; }
+.industry-trigger[aria-expanded=true] svg { transform:rotate(180deg); }
+.industry-trigger:hover,.industry-trigger[aria-expanded=true],.industry-dropdown.is-current .industry-trigger { color:var(--mint); }
+.industry-menu { position:absolute; top:calc(100% + 15px); left:-18px; width:232px; padding:9px; background:#0b2030; border:1px solid rgba(106,242,204,.22); border-radius:13px; box-shadow:0 18px 48px rgba(0,0,0,.35); z-index:60; }
+.industry-menu[hidden] { display:none !important; }
+.industry-menu-label { display:block; color:#8fa7bd; font-size:10px; font-weight:700; letter-spacing:.09em; padding:9px 11px 6px; }
+.nav-links .industry-menu a { display:block; color:#d3e4ed; font-size:13px; font-weight:600; padding:9px 11px; border-radius:7px; line-height:1.45; }
+.nav-links .industry-menu a:hover,.nav-links .industry-menu a:focus-visible,.nav-links .industry-menu a[aria-current=true] { color:var(--mint); background:rgba(106,242,204,.09); }
+.nav-links .industry-menu .industry-all { border-top:1px solid var(--line); border-radius:0 0 7px 7px; margin-top:5px; padding-top:12px; color:var(--mint); display:flex; justify-content:space-between; }
+html[data-theme=light] .industry-trigger { color:#3f5968; }
+html[data-theme=light] .industry-trigger:hover,html[data-theme=light] .industry-trigger[aria-expanded=true],html[data-theme=light] .industry-dropdown.is-current .industry-trigger { color:#08715e; }
+html[data-theme=light] .industry-menu { background:#f9fdfd; border-color:#cde4e1; box-shadow:0 18px 48px rgba(14,57,69,.14); }
+html[data-theme=light] .industry-menu-label { color:#577482; }
+html[data-theme=light] .nav-links .industry-menu a { color:#355769; }
+html[data-theme=light] .nav-links .industry-menu a:hover,html[data-theme=light] .nav-links .industry-menu a:focus-visible,html[data-theme=light] .nav-links .industry-menu a[aria-current=true] { color:#08715e; background:#e4f4ef; }
+html[data-theme=light] .nav-links .industry-menu .industry-all { color:#08715e; }
+@media(max-width:1050px) {
+  .nav-links.open { max-height:calc(100vh - 72px); max-height:calc(100dvh - 72px); overflow-y:auto; overscroll-behavior:contain; }
+  .industry-trigger { width:100%; justify-content:space-between; padding:13px 0; font-size:15px; text-align:left; color:#c9dce6; }
+  .industry-menu { position:static; width:auto; margin:0 0 8px; padding:5px 8px 8px; box-shadow:none; }
+  .nav-links .industry-menu a { padding:10px 11px; font-size:14px; }
+  html[data-theme=light] .industry-menu { box-shadow:none; }
+}
+@media(prefers-reduced-motion:reduce) { .industry-trigger svg { transition:none; } }
+
+/* Bridge the gap between the desktop trigger and the dropdown panel. */
+@media (min-width:1051px) and (hover:hover) and (pointer:fine) {
+  .industry-menu::before { content:""; position:absolute; top:-16px; left:0; right:0; height:16px; }
+}

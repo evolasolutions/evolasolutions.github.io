@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><script>
+/* Read the saved theme before CSS paints to avoid a flash on navigation. */
+(function () {
+  var theme = 'dark';
+  try { if (window.localStorage.getItem('evola-theme') === 'light') theme = 'light'; } catch (_) {}
+  document.documentElement.setAttribute('data-theme', theme);
+})();
+</script>
+<meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="#071523" name="theme-color"/><meta content="Spend less time on paperwork, emails and approvals. Evola helps businesses simplify everyday work, with no tech jargon." name="description"/>
+<meta content="website" property="og:type"/><meta content="Evola" property="og:site_name"/><meta content="Less Admin. More Time. | Evola" property="og:title"/><meta content="We make the everyday tasks that slow your business down simpler, from invoices and approvals to customer enquiries and reminders." property="og:description"/>
+<title>Less Admin. More Time. | Evola</title>
+<link rel="icon" type="image/png" href="evola-symbol.png"/>
+<link href="styles.css" rel="stylesheet"/><link href="premium.css" rel="stylesheet"/><link href="theme.css" rel="stylesheet"/><link href="usecases.css" rel="stylesheet"/><link href="homepage.css" rel="stylesheet"/><link href="carousel.css?v=3" rel="stylesheet"/><link rel="stylesheet" href="evola.css?v=2"/>
+<link rel="stylesheet" href="industry-menu.css?v=3"/>
+<link rel="stylesheet" href="experience.css?v=1"/>
+<link rel="stylesheet" href="fullwidth.css?v=1"/>
+<link rel="stylesheet" href="logo-hero.css?v=1"/>
+<link rel="stylesheet" href="activate-evola.css?v=1"/>
+</head><body><a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header" id="top"><div class="container nav-inner">
+<a aria-label="Evola home" class="brand" href="index.html">
+<img class="evola-symbol" src="evola-symbol.png" alt="" width="385" height="273"/>
+<span><span class="brand-name">Evola</span><span class="brand-label">IT Solutions</span></span></a>
+<nav aria-label="Main navigation" class="nav-links" id="main-nav"><a aria-current="page" href="index.html">Home</a>
+<a href="services.html">Services</a>
+<a href="solutions.html">Solutions</a>
+<div class="industry-dropdown">
+<button type="button" class="industry-trigger" aria-expanded="false" aria-controls="industry-menu">Industries <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 6 4 4 4-4"/></svg></button>
+<div class="industry-menu" id="industry-menu" hidden>
+<span class="industry-menu-label">EXPLORE BY INDUSTRY</span>
+<a href="use-cases.html?industry=finance#browse-usecases" data-industry-link="finance"><svg class="industry-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 10h18m-5 5h2"/></svg><span class="industry-item-text"><strong>Finance</strong><small>Invoices, approvals and reporting</small></span></a>
+<a href="use-cases.html?industry=assets#browse-usecases" data-industry-link="assets"><svg class="industry-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 9 5v9l-9 5-9-5V8l9-5Zm0 9 9-4M12 12 3 8m9 4v10"/></svg><span class="industry-item-text"><strong>Asset Management</strong><small>Equipment, inventory and maintenance</small></span></a>
+<a href="use-cases.html?industry=retail#browse-usecases" data-industry-link="retail"><svg class="industry-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 8h16l1 13H3L4 8Zm4 0V6a4 4 0 0 1 8 0v2"/></svg><span class="industry-item-text"><strong>Retail</strong><small>Stock, orders and customer enquiries</small></span></a>
+<a href="use-cases.html?industry=councils#browse-usecases" data-industry-link="councils"><svg class="industry-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 9 9-6 9 6H3Zm2 2v7m5-7v7m4-7v7m5-7v7M3 21h18"/></svg><span class="industry-item-text"><strong>Councils</strong><small>Resident requests and permits</small></span></a>
+<a href="use-cases.html?industry=schools#browse-usecases" data-industry-link="schools"><svg class="industry-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m2 9 10-5 10 5-10 5-10-5Zm4 2v6c4 3 8 3 12 0v-6m4-2v8"/></svg><span class="industry-item-text"><strong>Schools</strong><small>Enrolments and everyday administration</small></span></a>
+<a href="use-cases.html?industry=tradies#browse-usecases" data-industry-link="tradies"><svg class="industry-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 6a5 5 0 0 0-7 6L3 16a3 3 0 0 0 4 4l5-5a5 5 0 0 0 6-7l-4 4-3-3 3-3Z"/></svg><span class="industry-item-text"><strong>Tradies</strong><small>Quotes, scheduling and invoicing</small></span></a>
+<a href="use-cases.html?industry=healthcare#browse-usecases" data-industry-link="healthcare"><svg class="industry-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 8.5c0 4-8.8 10-8.8 10s-8.8-6-8.8-10a4.8 4.8 0 0 1 8.8-2.6 4.8 4.8 0 0 1 8.8 2.6Z"/><path d="M5 12h4l2-3 2 6 2-3h4"/></svg><span class="industry-item-text"><strong>Healthcare</strong><small>Appointments and non-clinical administration</small></span></a>
+<a class="industry-all" href="use-cases.html#browse-usecases" data-industry-link="all">View all industries <span aria-hidden="true">&#8599;</span></a>
+</div></div>
+<a href="ai-training.html">AI Training</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a></nav>
+<a class="nav-cta" href="contact.html">Let's talk  →</a>
+<button aria-label="Switch to light mode" class="theme-toggle" title="Switch to light mode" type="button">
+<svg aria-hidden="true" class="theme-sun" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 24 24"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"></path></svg>
+<svg aria-hidden="true" class="theme-moon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 24 24"><path d="M20.9 13A9 9 0 0 1 11 3.1a9 9 0 1 0 9.9 9.9Z"></path></svg>
+<span class="theme-toggle-text">Light mode</span>
+</button>
+<button aria-controls="main-nav" aria-expanded="false" aria-label="Open navigation menu" class="nav-toggle" type="button"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" viewbox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"></path></svg></button>
+</div></header><main class="lp-main" id="main">
+<section aria-label="Discover how we help" aria-roledescription="carousel" class="lp-hero lp-carousel" data-active="0">
+<div class="ev-hero-scene ev-logo-scene" aria-hidden="true">
+  <div class="ev-logo-ambient"></div>
+
+</div>
+<div class="container lp-carousel-inner"><div class="lp-slides"><article class="lp-slide is-active" role="group" aria-roledescription="slide" aria-label="1 of 4: Business automation" >
+<div class="lp-hero-inner">
+<div class="lp-hero-copy"><span class="lp-overline"><span class="lp-overline-line"></span>BUSINESS AUTOMATION</span>
+<h1 class="lp-slide-title">Less admin.<br/><em>More time.</em></h1>
+<p>Spend less time on paperwork, emails and repetitive tasks. Let smart automation take care of the busywork.</p><div class="lp-hero-actions"><a class="lp-btn lp-btn-primary" href="#what-we-help-with">See how we help <span aria-hidden="true">&#8599;</span></a><a class="lp-btn lp-btn-ghost" href="contact.html">Let's talk <span aria-hidden="true">&#8594;</span></a></div>
+<div class="lp-hero-note"><span aria-hidden="true" class="lp-proof-dot"></span>No technical knowledge required.</div></div>
+</div></article><article class="lp-slide" role="group" aria-roledescription="slide" aria-label="2 of 4: AI solutions" aria-hidden="true" inert>
+<div class="lp-hero-inner">
+<div class="lp-hero-copy"><span class="lp-overline"><span class="lp-overline-line"></span>AI SOLUTIONS</span>
+<h2 class="lp-slide-title">Work smarter.<br/><em>With AI.</em></h2>
+<p>Discover practical ways AI can help your business, without needing to be a technology expert.</p><div class="lp-hero-actions"><a class="lp-btn lp-btn-primary" href="solutions.html">Explore AI solutions <span aria-hidden="true">&#8599;</span></a><a class="lp-btn lp-btn-ghost" href="contact.html">Let's talk <span aria-hidden="true">&#8594;</span></a></div>
+<div class="lp-hero-note"><span aria-hidden="true" class="lp-proof-dot"></span>No technical knowledge required.</div></div>
+</div></article><article class="lp-slide" role="group" aria-roledescription="slide" aria-label="3 of 4: Business workflows" aria-hidden="true" inert>
+<div class="lp-hero-inner">
+<div class="lp-hero-copy"><span class="lp-overline"><span class="lp-overline-line"></span>BUSINESS WORKFLOWS</span>
+<h2 class="lp-slide-title">Simplify work.<br/><em>Every day.</em></h2>
+<p>From invoices and customer enquiries to scheduling and approvals, make everyday work easier.</p><div class="lp-hero-actions"><a class="lp-btn lp-btn-primary" href="use-cases.html">Explore industries <span aria-hidden="true">&#8599;</span></a><a class="lp-btn lp-btn-ghost" href="contact.html">Let's talk <span aria-hidden="true">&#8594;</span></a></div>
+<div class="lp-hero-note"><span aria-hidden="true" class="lp-proof-dot"></span>No technical knowledge required.</div></div>
+</div></article><article class="lp-slide" role="group" aria-roledescription="slide" aria-label="4 of 4: AI training" aria-hidden="true" inert>
+<div class="lp-hero-inner">
+<div class="lp-hero-copy"><span class="lp-overline"><span class="lp-overline-line"></span>AI TRAINING</span>
+<h2 class="lp-slide-title">Learn AI.<br/><em>With confidence.</em></h2>
+<p>Practical AI training designed for everyday business teams, not just IT professionals.</p><div class="lp-hero-actions"><a class="lp-btn lp-btn-primary" href="ai-training.html">Explore AI training <span aria-hidden="true">&#8599;</span></a><a class="lp-btn lp-btn-ghost" href="contact.html">Let's talk <span aria-hidden="true">&#8594;</span></a></div>
+<div class="lp-hero-note"><span aria-hidden="true" class="lp-proof-dot"></span>No technical knowledge required.</div></div>
+</div></article></div>
+<div class="ev-logo-stage ev-activate-stage" data-expanded="false">
+  <div class="ev-activate-visual">
+    <div class="ev-activate-decoration" aria-hidden="true">    <div class="ev-logo-halo"></div>
+    <div class="ev-orbit-ring ev-orbit-ring-one"></div><div class="ev-orbit-ring ev-orbit-ring-two"></div>
+    <div class="ev-orbit-particles"><span class="ev-orbit-particle" style="--phase:-0.0s;--orbit-scale:1"></span><span class="ev-orbit-particle" style="--phase:-2.7s;--orbit-scale:1"></span><span class="ev-orbit-particle" style="--phase:-5.4s;--orbit-scale:1"></span><span class="ev-orbit-particle" style="--phase:-8.100000000000001s;--orbit-scale:0.78"></span><span class="ev-orbit-particle" style="--phase:-10.8s;--orbit-scale:0.78"></span><span class="ev-orbit-particle" style="--phase:-13.5s;--orbit-scale:0.78"></span></div>
+</div>
+    <svg class="ev-capability-lines" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width=".23" stroke-dasharray=".8 1.1"><path d="M50 48L18 15 M50 48L82 15 M50 48L18 48 M50 48L82 48 M50 48L18 81 M50 48L82 81"/></g></svg>
+    <button class="ev-activate-trigger" type="button" aria-expanded="false" aria-controls="ev-capabilities" disabled>
+      <span class="ev-activate-art" aria-hidden="true"><span class="ev-logo-float"><span class="ev-logo-perspective"><span class="ev-logo-spin"><img class="ev-logo-layer ev-logo-face" style="--depth:-12px" src="evola-symbol.png" alt="" width="385" height="273" draggable="false"><img class="ev-logo-layer ev-logo-edge" style="--depth:-9px" src="evola-symbol.png" alt="" width="385" height="273" draggable="false"><img class="ev-logo-layer ev-logo-edge" style="--depth:-6px" src="evola-symbol.png" alt="" width="385" height="273" draggable="false"><img class="ev-logo-layer ev-logo-edge" style="--depth:-3px" src="evola-symbol.png" alt="" width="385" height="273" draggable="false"><img class="ev-logo-layer ev-logo-edge" style="--depth:0px" src="evola-symbol.png" alt="" width="385" height="273" draggable="false"><img class="ev-logo-layer ev-logo-edge" style="--depth:3px" src="evola-symbol.png" alt="" width="385" height="273" draggable="false"><img class="ev-logo-layer ev-logo-edge" style="--depth:6px" src="evola-symbol.png" alt="" width="385" height="273" draggable="false"><img class="ev-logo-layer ev-logo-edge" style="--depth:9px" src="evola-symbol.png" alt="" width="385" height="273" draggable="false"><img class="ev-logo-layer ev-logo-face" style="--depth:12px" src="evola-symbol.png" alt="" width="385" height="273" draggable="false"></span></span></span></span>
+      <span class="ev-activate-label"><span class="ev-activate-pulse" aria-hidden="true"></span><span class="ev-activate-text">Activate Evola</span><span class="ev-activate-sign" aria-hidden="true">+</span></span>
+    </button>
+  </div>
+  <div class="ev-capabilities" id="ev-capabilities" inert aria-hidden="true"><a class="ev-capability ev-capability-1" href="services.html#automation" data-description="Reduce paperwork, repetitive tasks and manual approvals." aria-label="Business Automation: Reduce paperwork, repetitive tasks and manual approvals."><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h8v6H3z M13 14h8v6h-8z M7 10v7h6 M17 14V7h-6"/></svg><span>Business Automation</span><span class="ev-cap-arrow" aria-hidden="true">&#8599;</span></a>
+<a class="ev-capability ev-capability-2" href="services.html#ai-agents" data-description="Get practical help from AI assistants and approved business information." aria-label="AI Solutions: Get practical help from AI assistants and approved business information."><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v3m0 12v3M3 12h3m12 0h3 M8 6h8l3 6-3 6H8l-3-6z M10 12h.01m4 0h.01"/></svg><span>AI Solutions</span><span class="ev-cap-arrow" aria-hidden="true">&#8599;</span></a>
+<a class="ev-capability ev-capability-3" href="services.html#project-workflows" data-description="Simplify project tracking, reporting and team coordination." aria-label="Project Workflows: Simplify project tracking, reporting and team coordination."><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6h11M9 12h11M9 18h11M3 5l1 1 2-2M3 11l1 1 2-2M3 17l1 1 2-2"/></svg><span>Project Workflows</span><span class="ev-cap-arrow" aria-hidden="true">&#8599;</span></a>
+<a class="ev-capability ev-capability-4" href="ai-training.html#tracks" data-description="Help your team use AI confidently in everyday work." aria-label="AI Training: Help your team use AI confidently in everyday work."><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 9l10-5 10 5-10 5-10-5z M6 11v6q6 5 12 0v-6 M22 9v8"/></svg><span>AI Training</span><span class="ev-cap-arrow" aria-hidden="true">&#8599;</span></a>
+<a class="ev-capability ev-capability-5" href="services.html#cloud-operations" data-description="Keep your technology and business systems running reliably." aria-label="Managed Services: Keep your technology and business systems running reliably."><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16v7H4z M4 13h16v7H4z M7 7.5h.01M7 16.5h.01M12 7.5h5M12 16.5h5"/></svg><span>Managed Services</span><span class="ev-cap-arrow" aria-hidden="true">&#8599;</span></a>
+<a class="ev-capability ev-capability-6" href="use-cases.html#browse-usecases" data-description="Explore practical automation opportunities for your industry." aria-label="Industry Solutions: Explore practical automation opportunities for your industry."><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18M5 21V9l7-5 7 5v12M9 21v-5h6v5M9 11h.01M15 11h.01"/></svg><span>Industry Solutions</span><span class="ev-cap-arrow" aria-hidden="true">&#8599;</span></a></div>
+  <p class="ev-capability-detail" aria-hidden="true">Choose a service to explore what we can do for you.</p>
+</div>
+<div class="lp-carousel-controls" hidden><div class="lp-carousel-position"><span class="lp-slide-count" aria-hidden="true">01 / 04</span><div class="lp-slide-dots" aria-label="Choose slide"><button type="button" class="lp-slide-dot" data-slide="0" aria-label="Show slide 1: Business automation" aria-current="true"><span></span></button><button type="button" class="lp-slide-dot" data-slide="1" aria-label="Show slide 2: AI solutions" ><span></span></button><button type="button" class="lp-slide-dot" data-slide="2" aria-label="Show slide 3: Business workflows" ><span></span></button><button type="button" class="lp-slide-dot" data-slide="3" aria-label="Show slide 4: AI training" ><span></span></button></div></div></div>
+<span class="lp-sr-only lp-carousel-status" role="status"></span></div></section>
+<section aria-labelledby="lp-help-title" class="lp-help" id="what-we-help-with">
+<div class="container">
+<div class="lp-section-heading">
+<span class="lp-kicker">WHAT WE HELP WITH</span>
+<h2 id="lp-help-title">The little tasks that <em>take up your day.</em></h2>
+<p>Start with one problem. We help find a simpler way to get it done.</p>
+</div>
+<div class="lp-help-grid">
+<a class="lp-help-card" href="services.html"><span aria-hidden="true" class="lp-icon">01</span><h3>Paperwork &amp; approvals</h3><p>Reduce retyping, back-and-forth emails and manual follow-ups.</p><span class="lp-card-link">Explore services <b aria-hidden="true">↗</b></span></a>
+<a class="lp-help-card" href="use-cases.html"><span aria-hidden="true" class="lp-icon">02</span><h3>Enquiries &amp; bookings</h3><p>Make it easier to respond, prepare quotes and keep requests moving.</p><span class="lp-card-link">See real-world examples <b aria-hidden="true">↗</b></span></a>
+<a class="lp-help-card" href="ai-training.html"><span aria-hidden="true" class="lp-icon">03</span><h3>AI made approachable</h3><p>Practical help for your team to get comfortable with useful AI tools.</p><span class="lp-card-link">Explore AI training <b aria-hidden="true">↗</b></span></a>
+</div>
+</div>
+</section>
+<section aria-labelledby="lp-example-title" class="lp-example">
+<div class="container lp-example-inner">
+<div class="lp-example-copy">
+<span class="lp-kicker">SEE THE DIFFERENCE</span>
+<h2 id="lp-example-title">What if invoices <em>didn't need chasing?</em></h2>
+<p>Instead of moving an invoice between emails and spreadsheets, a simple workflow can prepare it, send it for approval and keep everyone updated.</p>
+<a class="lp-text-link" href="use-cases.html?industry=finance#finance">Explore more everyday examples <span aria-hidden="true">↗</span></a>
+</div>
+<div aria-label="Illustrative before and after invoice approval process" class="lp-before-after">
+<div class="lp-compare lp-before"><span class="lp-compare-label">BEFORE</span><h3>Lots of chasing</h3><p>Open emails, copy details, follow up and track down approvals.</p></div>
+<div aria-hidden="true" class="lp-compare-arrow">→</div>
+<div class="lp-compare lp-after"><span class="lp-compare-label">WITH AUTOMATION</span><h3>One clear process</h3><p>Details prepared, sent for review and tracked in one place.</p></div>
+</div>
+<p class="lp-example-note">Illustrative workflow. The approach depends on your existing tools and needs.</p>
+</div>
+</section>
+<section class="ev-faq" aria-labelledby="ev-faq-heading"><div class="container ev-faq-layout"><div><span class="lp-kicker">ASK EVOLA</span><h2 id="ev-faq-heading">Good questions.<br><em>Simple answers.</em></h2><p>New to automation or AI? You're in the right place.</p><a class="lp-text-link" href="contact.html">Ask us anything <span aria-hidden="true">↗</span></a></div><div class="ev-faq-list">
+<details><summary>Do I need to understand IT or AI?</summary><p>No. Tell us which tasks are taking too much time. We explain the options in plain English and guide you through the process.</p></details>
+<details><summary>Can I keep using my existing software?</summary><p>Often, yes. We start by understanding the tools you already use and check what can be connected before proposing any change.</p></details>
+<details><summary>Is automation expensive?</summary><p>It depends on the task, the tools involved and the level of support you need. We can start with one manageable workflow and agree on scope before work begins.</p></details>
+<details><summary>Will I still be in control?</summary><p>Yes. We design workflows with appropriate approvals and human review, especially where money, personal information or important decisions are involved.</p></details>
+</div></div></section>
+<section aria-labelledby="lp-outro-title" class="lp-outro">
+<div class="container lp-outro-inner">
+<div><span class="lp-kicker">READY WHEN YOU ARE</span><h2 id="lp-outro-title">Tell us what's <em>slowing you down.</em></h2><p>No technical brief needed. Just tell us about the task you'd love to make easier.</p></div>
+<a class="lp-btn lp-btn-primary" href="contact.html">Start a conversation <span aria-hidden="true">↗</span></a>
+</div>
+</section>
+</main><footer class="site-footer"><div class="container">
+<div class="footer-grid"><div><a aria-label="Evola home" class="brand" href="index.html">
+<img class="evola-symbol" src="evola-symbol.png" alt="" width="385" height="273"/>
+<span><span class="brand-name">Evola</span><span class="brand-label">IT Solutions</span></span></a><p class="footer-description">Practical automation, AI training and managed services designed to make work easier and operations more reliable.</p></div>
+<div><h3 class="footer-heading">Explore</h3><div class="footer-list"><a href="index.html">Home</a><a href="services.html">Services</a><a href="solutions.html">Solutions</a>
+<a href="use-cases.html">Industries</a><a href="ai-training.html">AI Training</a><a href="about.html">About</a><a href="contact.html">Contact</a></div></div>
+<div><h3 class="footer-heading">Get in touch</h3><div class="footer-list"><a href="mailto:hello@yourdomain.com">hello@yourdomain.com</a><a href="contact.html">Start a conversation</a><a href="#top">Back to top ↑</a></div></div></div>
+<div class="footer-bottom"><span>© <span class="js-year">2026</span> Evola. All rights reserved.</span><span>Made to simplify complex work.</span></div>
+</div></footer><script defer="" src="script.js?v=4"></script><script defer src="carousel.js?v=4"></script><script defer src="activate-evola.js?v=1"></script></body></html>

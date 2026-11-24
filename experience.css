@@ -1,0 +1,61 @@
+/* Evola experience: original wave artwork, cinematic hero, industry mega menu. */
+.lp-main .lp-hero{isolation:isolate;background:linear-gradient(110deg,#061421 0%,#0a202e 56%,#0a3539 100%);min-height:calc(100svh - 82px);display:flex;align-items:stretch}
+.lp-main .lp-carousel-inner.container{display:flex;flex-direction:column;justify-content:center;min-height:inherit;position:relative;max-width:1800px;width:92%;padding:0 0 30px;margin:auto}
+.lp-carousel .lp-slides{flex:1;align-items:stretch}
+.lp-carousel .lp-hero-inner{display:flex;align-items:center;min-height:clamp(540px,72vh,850px);padding:72px 0 54px;gap:0}
+.lp-carousel .lp-hero-copy{width:min(900px,100%);position:relative;z-index:2;padding-left:clamp(0px,1vw,22px)}
+.lp-carousel .lp-slide-title{font-size:clamp(60px,8vw,132px);line-height:.99;letter-spacing:-.067em;max-width:1150px;margin:30px 0 32px;text-wrap:balance}
+.lp-carousel .lp-hero-copy>p{max-width:650px;font-size:clamp(16px,1.4vw,20px);line-height:1.65}
+.lp-carousel-controls{margin-top:auto;padding:0 0 8px}
+.ev-hero-scene,.ev-hero-shade,.ev-wave{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;overflow:hidden}
+.ev-hero-scene{z-index:0}.ev-wave{opacity:.94;transform:scale(1.04);filter:drop-shadow(0 0 9px #43d9c22c)}
+.ev-hero-shade{background:linear-gradient(90deg,rgba(6,20,33,.96) 0%,rgba(6,20,33,.87) 21%,rgba(6,20,33,.60) 43%,rgba(6,20,33,.05) 80%),linear-gradient(0deg,#06142155,transparent 40%)}
+.ev-aurora{position:absolute;border-radius:50%;filter:blur(65px);transform-origin:center;will-change:transform;opacity:.8}
+.ev-aurora-one{width:70%;height:85%;right:-15%;top:-6%;background:radial-gradient(ellipse,#1aa99d65 0%,#146b7a42 40%,transparent 72%);animation:ev-drift 18s ease-in-out infinite alternate}
+.ev-aurora-two{width:58%;height:100%;right:6%;bottom:-40%;background:radial-gradient(ellipse,#28d2a835 0%,transparent 68%);animation:ev-drift-two 22s ease-in-out infinite alternate}
+.ev-wave-one,.ev-wave-two,.ev-particles{transform-box:fill-box;transform-origin:center;will-change:transform}
+.ev-wave-one{animation:ev-wave-one 16s ease-in-out infinite alternate}.ev-wave-two{animation:ev-wave-two 21s ease-in-out infinite alternate}.ev-particles{animation:ev-particles 12s ease-in-out infinite alternate}
+@keyframes ev-drift{from{transform:translate(-3%,0) scale(.95)}to{transform:translate(-13%,12%) scale(1.18)}}
+@keyframes ev-drift-two{from{transform:translate(7%,0)}to{transform:translate(-12%,-15%) scale(1.2)}}
+@keyframes ev-wave-one{from{transform:translate(0,-15px) rotate(-2deg)}to{transform:translate(55px,45px) rotate(4deg) scaleY(1.12)}}
+@keyframes ev-wave-two{from{transform:translate(20px,35px) rotate(4deg)}to{transform:translate(-35px,-30px) rotate(-5deg) scaleY(.92)}}
+@keyframes ev-particles{from{transform:translate(0,12px);opacity:.45}to{transform:translate(-25px,-18px);opacity:1}}
+html[data-theme="light"] .lp-main .lp-hero{background:linear-gradient(110deg,#f5fbfb,#e2f3f0 62%,#bde8e0)}
+html[data-theme="light"] .ev-hero-shade{background:linear-gradient(90deg,rgba(245,251,251,.98),rgba(245,251,251,.87) 32%,rgba(245,251,251,.32) 70%,transparent)}
+html[data-theme="light"] .ev-wave{filter:saturate(1.25) brightness(.78);opacity:.85}
+/* Regular link disclosure retained, with a larger two-column panel. */
+.industry-menu{width:min(610px,calc(100vw - 36px));left:50%;transform:translateX(-50%);padding:15px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:5px;top:calc(100% + 15px)}
+.industry-menu-label,.industry-menu .industry-all{grid-column:1/-1}
+.industry-menu-label{padding:7px 9px 10px;letter-spacing:.14em}
+.nav-links .industry-menu a:not(.industry-all){display:flex;gap:12px;align-items:flex-start;min-width:0;padding:12px 10px}
+.industry-icon{width:24px;height:24px;flex:0 0 24px;color:var(--mint);margin-top:2px}
+.industry-item-text{display:flex;flex-direction:column;gap:4px;min-width:0}
+.industry-item-text strong{font-weight:700;font-size:13px;line-height:1.3}.industry-item-text small{font-size:11px;line-height:1.45;font-weight:400;color:#a9becd}
+html[data-theme="light"] .industry-item-text small{color:#496675}html[data-theme="light"] .industry-icon{color:#08715e}
+/* Short FAQ; accessible native disclosure. */
+.ev-faq{padding:clamp(60px,7vw,100px) 0;border-top:1px solid var(--lp-stroke);background:var(--lp-bg)}
+.ev-faq-layout{display:grid;grid-template-columns:.86fr 1.14fr;gap:clamp(30px,6vw,88px);align-items:start}
+.ev-faq h2{font-size:clamp(36px,4.5vw,66px);letter-spacing:-.055em;line-height:1.08;margin:14px 0;color:var(--lp-ink);font-weight:850}
+.ev-faq h2 em{color:var(--lp-mint);font-style:normal}.ev-faq p{color:var(--lp-copy);line-height:1.7;margin:14px 0 20px}
+.ev-faq-list{border-top:1px solid var(--lp-stroke)}.ev-faq details{border-bottom:1px solid var(--lp-stroke)}
+.ev-faq summary{display:flex;align-items:center;justify-content:space-between;gap:16px;cursor:pointer;padding:20px 0;color:var(--lp-ink);font-size:17px;font-weight:700;list-style:none}
+.ev-faq summary::-webkit-details-marker{display:none}.ev-faq summary:after{content:'+';font-size:24px;font-weight:400;color:var(--lp-mint)}.ev-faq details[open] summary:after{content:'−'}
+.ev-faq details p{margin:0 32px 20px 0;font-size:15px}.ev-faq summary:focus-visible{outline:2px solid var(--lp-mint);outline-offset:4px}
+/* Real business imagery, credited as illustrative stock rather than client photos. */
+.ev-photo-layout{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(28px,4vw,60px);align-items:center}
+.ev-photo{margin:0;min-width:0}.ev-photo-frame{position:relative;overflow:hidden;border-radius:14px;aspect-ratio:4/3;background:radial-gradient(ellipse at 85% 15%,#19878370,transparent 64%),linear-gradient(140deg,#102737,#0e3a40);border:1px solid #58bdb64d}
+.ev-photo img{display:block;width:100%;height:100%;object-fit:cover;position:relative;z-index:1}.ev-photo img[hidden]{display:none}
+.ev-photo-fallback{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:9px;color:#81efda;font-size:32px;font-weight:850;letter-spacing:.2em}.ev-photo-fallback small{font-size:12px;letter-spacing:.04em;font-weight:400;color:#b8dedb}
+.ev-photo figcaption{font-size:10px;color:var(--muted,#a6bac6);padding-top:10px}.ev-photo figcaption a{color:inherit;text-decoration:underline}
+@media(min-width:1051px){.industry-menu::before{left:0;right:0;top:-17px;height:17px}}
+@media(max-width:1050px){.industry-menu{width:auto;transform:none;padding:7px;gap:3px}.industry-item-text strong{font-size:14px}.industry-item-text small{font-size:12px}}
+@media(max-width:850px){.lp-main .lp-hero{min-height:unset}.lp-main .lp-carousel-inner.container{width:92%;min-height:0}.lp-carousel .lp-hero-inner{min-height:570px;padding:65px 0 40px}.lp-carousel .lp-slide-title{font-size:clamp(50px,10vw,88px);text-wrap:initial}.ev-wave{width:150%;left:-36%;opacity:.55}.ev-hero-shade{background:linear-gradient(90deg,#061421d9,#06142150 100%)}.ev-faq-layout,.ev-photo-layout{grid-template-columns:1fr}.ev-photo{max-width:660px}.ev-photo-frame{aspect-ratio:16/10}}
+@media(max-width:650px){.lp-carousel .lp-hero-inner{min-height:520px;padding:54px 0 32px}.lp-carousel .lp-slide-title{font-size:clamp(42px,10vw,65px);margin:20px 0 24px;overflow-wrap:normal}.lp-carousel .lp-hero-copy>p{font-size:16px}.ev-hero-shade{background:linear-gradient(90deg,#061421d9,#0614217a)}.industry-menu{grid-template-columns:1fr}.nav-links .industry-menu a:not(.industry-all){padding:10px 8px}.ev-faq summary{font-size:16px}}
+@media(prefers-reduced-motion:reduce){.ev-aurora,.ev-wave-one,.ev-wave-two,.ev-particles{animation:none!important}}
+/* Keep controls legible against the pale theme. */
+html[data-theme="light"] .site-header .nav-links > a{color:#365665}
+html[data-theme="light"] .site-header .nav-links > a:hover,html[data-theme="light"] .site-header .nav-links > a[aria-current="page"]{color:#08715e}
+html[data-theme="light"] .site-header .theme-toggle{color:#086a62;border-color:#87bfb4;background:#edf9f6}
+html[data-theme="light"] .lp-main .lp-btn-primary{color:#fff;background:#087b68;border-color:#087b68}
+html[data-theme="light"] .lp-main .lp-btn-primary:hover{color:#fff;background:#066451}
+html[data-theme="light"] .lp-main .lp-btn-ghost{color:#123346;border-color:#8caab1;background:#ffffff65}

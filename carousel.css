@@ -1,0 +1,34 @@
+/* A stable-height, progressively enhanced homepage carousel. */
+.lp-carousel-inner{position:relative;z-index:1;padding-top:0;padding-bottom:28px}
+.lp-carousel .lp-slides{display:grid;grid-template-columns:minmax(0,1fr)}
+.lp-carousel .lp-slide{grid-area:1/1;min-width:0;visibility:hidden;opacity:0;pointer-events:none;transition:opacity 1s cubic-bezier(.4,0,.2,1),visibility 0s linear 1s;z-index:0}
+.lp-carousel .lp-slide.is-active{visibility:visible;opacity:1;pointer-events:auto;transition:opacity 1s cubic-bezier(.4,0,.2,1),visibility 0s;z-index:1}
+.lp-carousel .lp-hero-inner{padding-top:60px;padding-bottom:36px;min-height:570px}
+.lp-carousel .lp-slide-title{font-size:clamp(50px,6.1vw,91px);font-weight:900;letter-spacing:-.07em;line-height:1.04;margin:28px 0 27px;color:#f7fffc;overflow-wrap:normal}
+html[data-theme="light"] .lp-carousel .lp-slide-title{color:#123346}
+.lp-carousel .lp-art-glow,.lp-carousel .lp-orbit{transition:transform .9s ease,opacity .9s ease}
+.lp-carousel[data-active="1"] .lp-art-glow{transform:translate(-12%,5%) scale(1.12)}
+.lp-carousel[data-active="1"] .lp-orbit-one{transform:rotate(28deg)}
+.lp-carousel[data-active="2"] .lp-art-glow{transform:translate(5%,-12%) scale(.88)}
+.lp-carousel[data-active="2"] .lp-orbit-two{transform:rotate(-44deg)}
+.lp-carousel[data-active="3"] .lp-art-glow{transform:translate(-9%,12%) scale(1.04)}
+.lp-carousel[data-active="3"] .lp-orbit-one{transform:rotate(-65deg)}
+.lp-carousel-controls[hidden]{display:none}
+.lp-carousel-controls{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;border-top:1px solid var(--lp-stroke);padding-top:14px}
+.lp-carousel-position,.lp-slide-dots,.lp-carousel-buttons{display:flex;align-items:center;gap:8px}
+.lp-slide-count{color:var(--lp-copy);font-size:11px;font-weight:750;font-variant-numeric:tabular-nums;letter-spacing:.12em;margin-right:10px}
+.lp-slide-dot,.lp-control{appearance:none;cursor:pointer;color:var(--lp-ink);background:transparent;border:1px solid transparent;font:inherit;min-height:44px;border-radius:7px;display:inline-flex;align-items:center;justify-content:center}
+.lp-slide-dot{padding:5px;min-width:36px}.lp-slide-dot span{width:20px;height:4px;border-radius:6px;background:var(--lp-copy);opacity:.55;transition:width .25s,opacity .25s}
+.lp-slide-dot[aria-current="true"] span{width:30px;background:var(--lp-mint);opacity:1}
+.lp-control{min-width:44px;padding:0 12px;border-color:var(--lp-stroke);font-size:19px}
+.lp-control:hover,.lp-slide-dot:hover{border-color:var(--lp-mint)}
+.lp-carousel button:focus-visible{outline:3px solid var(--lp-mint);outline-offset:3px}
+.lp-sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+@keyframes lp-slide-in{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:1060px){.lp-carousel .lp-slide-title{font-size:clamp(44px,5.7vw,75px)}}
+@media(max-width:850px){.lp-carousel .lp-hero-inner{min-height:unset;padding-top:58px;padding-bottom:35px;gap:28px}.lp-carousel .lp-slide-title{font-size:clamp(49px,9vw,76px)}}
+@media(max-width:650px){.lp-carousel .lp-hero-inner{padding-top:45px;padding-bottom:26px;gap:24px}.lp-carousel .lp-slide-title{font-size:clamp(38px,10.5vw,65px);margin:20px 0}.lp-carousel .lp-board-body{padding:17px}.lp-carousel .lp-board-row{padding:9px}.lp-carousel .lp-board-body h2{margin-bottom:15px}.lp-carousel .lp-board-top{padding:12px}.lp-carousel .lp-board-disclaimer{margin-top:12px}.lp-carousel .lp-hero-copy>p{margin-bottom:19px}.lp-carousel .lp-hero-note{margin-top:16px}.lp-carousel-inner{padding-bottom:18px}.lp-carousel-controls{gap:5px}.lp-carousel-position,.lp-slide-dots,.lp-carousel-buttons{gap:3px}.lp-slide-count{margin-right:3px}.lp-slide-dot{min-width:29px;padding:3px}.lp-slide-dot span{width:17px}.lp-slide-dot[aria-current="true"] span{width:22px}.lp-control{padding:0 9px}}
+@media(prefers-reduced-motion:reduce){.lp-carousel .lp-slide,.lp-carousel .lp-slide.is-active{transition:none}.lp-carousel .lp-art-glow,.lp-carousel .lp-orbit,.lp-slide-dot span{transition:none}}
+
+/* Minimal slide selection; no directional or playback buttons. */
+.lp-carousel-controls{justify-content:center;border-top:0;padding-top:4px}.lp-carousel-position{justify-content:center}.lp-slide-count{display:none}

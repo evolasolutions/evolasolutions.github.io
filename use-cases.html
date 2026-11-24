@@ -1,0 +1,246 @@
+<!DOCTYPE html><html lang="en"><head><script>
+/* Read the saved theme before CSS paints to avoid a flash on navigation. */
+(function () {
+  var theme = 'dark';
+  try { if (window.localStorage.getItem('evola-theme') === 'light') theme = 'light'; } catch (_) {}
+  document.documentElement.setAttribute('data-theme', theme);
+})();
+</script>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#071523"><meta name="description" content="21 practical automation use cases for finance, asset management, retail, councils, schools, trades and healthcare teams.">
+<meta property="og:type" content="website"><meta property="og:site_name" content="Evola"><meta property="og:title" content="Industries | Evola"><meta property="og:description" content="21 practical automation use cases for finance, asset management, retail, councils, schools, trades and healthcare teams.">
+<title>Industries | Evola</title>
+<link rel="icon" type="image/png" href="evola-symbol.png"/>
+<link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="premium.css"><link rel="stylesheet" href="theme.css"><link rel="stylesheet" href="usecases.css"><link rel="stylesheet" href="evola.css?v=2"/>
+<link rel="stylesheet" href="industry-menu.css?v=3"/>
+<link rel="stylesheet" href="experience.css?v=1"/>
+<link rel="stylesheet" href="fullwidth.css?v=1"/>
+</head><body><a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header" id="top"><div class="container nav-inner">
+<a class="brand" href="index.html" aria-label="Evola home">
+      <img class="evola-symbol" src="evola-symbol.png" alt="" width="385" height="273"/>
+      <span><span class="brand-name">Evola</span><span class="brand-label">IT Solutions</span></span></a>
+<nav class="nav-links" id="main-nav" aria-label="Main navigation"><a href="index.html">Home</a>
+<a href="services.html">Services</a>
+<a href="solutions.html">Solutions</a>
+<div class="industry-dropdown is-current">
+<button type="button" class="industry-trigger" aria-expanded="false" aria-controls="industry-menu">Industries <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 6 4 4 4-4"/></svg></button>
+<div class="industry-menu" id="industry-menu" hidden>
+<span class="industry-menu-label">EXPLORE BY INDUSTRY</span>
+<a href="use-cases.html?industry=finance#browse-usecases" data-industry-link="finance"><svg class="industry-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 10h18m-5 5h2"/></svg><span class="industry-item-text"><strong>Finance</strong><small>Invoices, approvals and reporting</small></span></a>
+<a href="use-cases.html?industry=assets#browse-usecases" data-industry-link="assets"><svg class="industry-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 9 5v9l-9 5-9-5V8l9-5Zm0 9 9-4M12 12 3 8m9 4v10"/></svg><span class="industry-item-text"><strong>Asset Management</strong><small>Equipment, inventory and maintenance</small></span></a>
+<a href="use-cases.html?industry=retail#browse-usecases" data-industry-link="retail"><svg class="industry-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 8h16l1 13H3L4 8Zm4 0V6a4 4 0 0 1 8 0v2"/></svg><span class="industry-item-text"><strong>Retail</strong><small>Stock, orders and customer enquiries</small></span></a>
+<a href="use-cases.html?industry=councils#browse-usecases" data-industry-link="councils"><svg class="industry-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 9 9-6 9 6H3Zm2 2v7m5-7v7m4-7v7m5-7v7M3 21h18"/></svg><span class="industry-item-text"><strong>Councils</strong><small>Resident requests and permits</small></span></a>
+<a href="use-cases.html?industry=schools#browse-usecases" data-industry-link="schools"><svg class="industry-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m2 9 10-5 10 5-10 5-10-5Zm4 2v6c4 3 8 3 12 0v-6m4-2v8"/></svg><span class="industry-item-text"><strong>Schools</strong><small>Enrolments and everyday administration</small></span></a>
+<a href="use-cases.html?industry=tradies#browse-usecases" data-industry-link="tradies"><svg class="industry-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 6a5 5 0 0 0-7 6L3 16a3 3 0 0 0 4 4l5-5a5 5 0 0 0 6-7l-4 4-3-3 3-3Z"/></svg><span class="industry-item-text"><strong>Tradies</strong><small>Quotes, scheduling and invoicing</small></span></a>
+<a href="use-cases.html?industry=healthcare#browse-usecases" data-industry-link="healthcare"><svg class="industry-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 8.5c0 4-8.8 10-8.8 10s-8.8-6-8.8-10a4.8 4.8 0 0 1 8.8-2.6 4.8 4.8 0 0 1 8.8 2.6Z"/><path d="M5 12h4l2-3 2 6 2-3h4"/></svg><span class="industry-item-text"><strong>Healthcare</strong><small>Appointments and non-clinical administration</small></span></a>
+<a class="industry-all" href="use-cases.html#browse-usecases" data-industry-link="all">View all industries <span aria-hidden="true">&#8599;</span></a>
+</div></div>
+<a href="ai-training.html">AI Training</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a></nav>
+<a class="nav-cta" href="contact.html">Let's talk&nbsp; →</a>
+<button class="theme-toggle" type="button" aria-label="Switch to light mode" title="Switch to light mode">
+  <svg class="theme-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></svg>
+  <svg class="theme-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.9 13A9 9 0 0 1 11 3.1a9 9 0 1 0 9.9 9.9Z"/></svg>
+  <span class="theme-toggle-text">Light mode</span>
+</button>
+<button class="nav-toggle" type="button" aria-controls="main-nav" aria-expanded="false" aria-label="Open navigation menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+</div></header><main id="main">
+<section class="uc-page-hero" aria-labelledby="uc-main-heading"><div class="container uc-hero-layout">
+  <div class="uc-hero-text"><div class="breadcrumb"><a href="index.html">Home</a><span>›</span>Industries</div>
+  <span class="eyebrow">AUTOMATION THAT WORKS FOR YOUR INDUSTRY</span>
+  <h1 id="uc-main-heading">Less admin.<br><span class="uc-gradient-text">More possibility.</span></h1>
+  <p>From finance teams and local councils to retailers, schools, trades and healthcare operations — explore practical ways to automate repetitive work and help people focus on what matters.</p>
+  <div class="hero-actions"><a class="btn btn-mint" href="#browse-usecases">Explore industries <span aria-hidden="true">↘</span></a><a class="btn btn-outline" href="contact.html#enquiry-form">Talk through a workflow <span aria-hidden="true">↗</span></a></div>
+  </div>
+  <figure class="ev-photo"><div class="ev-photo-frame"><img src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" alt="A customer paying at a small business counter" width="1200" height="800" decoding="async" referrerpolicy="no-referrer" onerror="this.hidden=true; this.parentElement.classList.add('photo-unavailable')"/><span class="ev-photo-fallback" aria-hidden="true">EVOLA <small>People. Process. Progress.</small></span></div><figcaption>Illustrative stock photography · <a href="https://unsplash.com/photos/woman-paying-at-salon-checkout-counter-tE6th1h6Bfk" target="_blank" rel="noopener noreferrer">Blake Wisz / Unsplash</a></figcaption></figure>
+</div></section>
+<section class="uc-proof-strip" aria-label="Use case collection overview"><div class="container uc-proof-inner"><div><strong>07</strong><span>Industries &amp; teams</span></div><div><strong>21</strong><span>Practical workflows</span></div><div><strong>01</strong><span>Goal: less busywork</span></div><p>Proposed automation patterns — not completed customer case studies or guaranteed outcomes.</p></div></section>
+<section class="uc-catalogue" id="browse-usecases" aria-labelledby="uc-catalogue-heading"><div class="container">
+  <div class="uc-catalogue-header"><div><span class="eyebrow">FIND YOUR OPPORTUNITY</span><h2 class="section-heading" id="uc-catalogue-heading">Explore by industry.</h2><p class="section-intro">Pick a team, or browse all 21 examples. Every idea can be adapted to your systems, policies and workflows.</p></div>
+  <label class="uc-search-label" for="uc-search"><span>Search use cases</span><input id="uc-search" type="search" placeholder="Try invoice, permit, appointment..." autocomplete="off"></label></div>
+  <div class="uc-filter-list" role="group" aria-label="Filter use cases by industry"><button type="button" class="uc-filter is-active" data-uc-filter="all" aria-pressed="true">All industries <span>21</span></button><button type="button" class="uc-filter" data-uc-filter="finance" aria-pressed="false">Finance <span>3</span></button><button type="button" class="uc-filter" data-uc-filter="assets" aria-pressed="false">Assets <span>3</span></button><button type="button" class="uc-filter" data-uc-filter="retail" aria-pressed="false">Retail <span>3</span></button><button type="button" class="uc-filter" data-uc-filter="councils" aria-pressed="false">Councils <span>3</span></button><button type="button" class="uc-filter" data-uc-filter="schools" aria-pressed="false">Schools <span>3</span></button><button type="button" class="uc-filter" data-uc-filter="tradies" aria-pressed="false">Tradies <span>3</span></button><button type="button" class="uc-filter" data-uc-filter="healthcare" aria-pressed="false">Healthcare <span>3</span></button></div>
+  <p id="uc-status" class="uc-results-status" role="status" aria-live="polite">Showing all 21 use cases</p>
+  <div id="uc-collections"><section class="uc-industry-block" id="finance" data-uc-industry="finance">
+  <div class="uc-industry-header"><div class="uc-industry-icon" aria-hidden="true">◈</div><div><span class="uc-industry-eyebrow">FINANCE · 03 USE CASES</span><h2>Finance teams</h2><p>Streamline finance workflows while keeping approval and audit controls in place.</p></div></div>
+  <div class="uc-card-grid"><article class="uc-case-card" id="invoice-processing" data-uc-card>
+  <div class="uc-case-top"><span class="uc-case-type">Finance teams</span><span class="uc-case-arrow" aria-hidden="true">↗</span></div>
+  <h3>Invoice processing &amp; approvals</h3>
+  <div class="uc-block"><span class="uc-kicker">THE CHALLENGE</span><p>Supplier invoices arrive by email and need manual data entry, purchase-order checks and approval chasing.</p></div>
+  <div class="uc-block"><span class="uc-kicker">THE APPROACH</span><p>Extract key fields, validate against purchase orders, route exceptions for review and prepare draft entries for the finance system.</p></div>
+  <div class="uc-stage-row" aria-label="Example workflow"><span>Capture</span><span>Extract &amp; match</span><span>Approve</span><span>Post draft</span></div>
+  <div class="uc-case-bottom"><p><strong>Potential value</strong> · Less rekeying, faster approvals and a clearer audit trail.</p><a href="contact.html?industry=finance&use_case=invoice-processing#enquiry-form" class="uc-text-link">Discuss this use case <span aria-hidden="true">↗</span></a></div>
+</article><article class="uc-case-card" id="accounts-receivable" data-uc-card>
+  <div class="uc-case-top"><span class="uc-case-type">Finance teams</span><span class="uc-case-arrow" aria-hidden="true">↗</span></div>
+  <h3>Accounts receivable follow-ups</h3>
+  <div class="uc-block"><span class="uc-kicker">THE CHALLENGE</span><p>Overdue invoices are monitored in spreadsheets and reminders depend on someone remembering to send them.</p></div>
+  <div class="uc-block"><span class="uc-kicker">THE APPROACH</span><p>Identify overdue balances, prepare or send policy-approved reminders and escalate exceptions to the account owner.</p></div>
+  <div class="uc-stage-row" aria-label="Example workflow"><span>Detect overdue</span><span>Draft reminder</span><span>Escalate</span><span>Track status</span></div>
+  <div class="uc-case-bottom"><p><strong>Potential value</strong> · More consistent follow-up and improved visibility over outstanding payments.</p><a href="contact.html?industry=finance&use_case=accounts-receivable#enquiry-form" class="uc-text-link">Discuss this use case <span aria-hidden="true">↗</span></a></div>
+</article><article class="uc-case-card" id="month-end-reporting" data-uc-card>
+  <div class="uc-case-top"><span class="uc-case-type">Finance teams</span><span class="uc-case-arrow" aria-hidden="true">↗</span></div>
+  <h3>Month-end reporting</h3>
+  <div class="uc-block"><span class="uc-kicker">THE CHALLENGE</span><p>Teams copy figures between systems, reconcile reports manually and assemble management packs late in the cycle.</p></div>
+  <div class="uc-block"><span class="uc-kicker">THE APPROACH</span><p>Consolidate approved data sources, flag discrepancies and create draft reporting commentary for finance review.</p></div>
+  <div class="uc-stage-row" aria-label="Example workflow"><span>Collect</span><span>Reconcile</span><span>Draft report</span><span>Review</span></div>
+  <div class="uc-case-bottom"><p><strong>Potential value</strong> · Less spreadsheet administration and more time to investigate variances.</p><a href="contact.html?industry=finance&use_case=month-end-reporting#enquiry-form" class="uc-text-link">Discuss this use case <span aria-hidden="true">↗</span></a></div>
+</article></div>
+</section><section class="uc-industry-block" id="assets" data-uc-industry="assets">
+  <div class="uc-industry-header"><div class="uc-industry-icon" aria-hidden="true">▣</div><div><span class="uc-industry-eyebrow">ASSETS · 03 USE CASES</span><h2>Asset management</h2><p>Track equipment, warranties, maintenance and replacement decisions in one workflow.</p></div></div>
+  <div class="uc-card-grid"><article class="uc-case-card" id="asset-lifecycle" data-uc-card>
+  <div class="uc-case-top"><span class="uc-case-type">Asset management</span><span class="uc-case-arrow" aria-hidden="true">↗</span></div>
+  <h3>Asset lifecycle &amp; warranty tracking</h3>
+  <div class="uc-block"><span class="uc-kicker">THE CHALLENGE</span><p>Equipment, computers and vehicle records live in disconnected spreadsheets, making renewals and replacements easy to miss.</p></div>
+  <div class="uc-block"><span class="uc-kicker">THE APPROACH</span><p>Consolidate asset records, flag warranty expiry and replacement dates, and create review tasks for asset owners.</p></div>
+  <div class="uc-stage-row" aria-label="Example workflow"><span>Register</span><span>Monitor</span><span>Notify</span><span>Review</span></div>
+  <div class="uc-case-bottom"><p><strong>Potential value</strong> · Better visibility, planned replacements and fewer missed renewals.</p><a href="contact.html?industry=assets&use_case=asset-lifecycle#enquiry-form" class="uc-text-link">Discuss this use case <span aria-hidden="true">↗</span></a></div>
+</article><article class="uc-case-card" id="preventive-maintenance" data-uc-card>
+  <div class="uc-case-top"><span class="uc-case-type">Asset management</span><span class="uc-case-arrow" aria-hidden="true">↗</span></div>
+  <h3>Preventive maintenance scheduling</h3>
+  <div class="uc-block"><span class="uc-kicker">THE CHALLENGE</span><p>Maintenance plans rely on calendar reminders and manual coordination of technicians and suppliers.</p></div>
+  <div class="uc-block"><span class="uc-kicker">THE APPROACH</span><p>Generate work orders from due dates or usage thresholds, notify owners and track completion evidence.</p></div>
+  <div class="uc-stage-row" aria-label="Example workflow"><span>Due date</span><span>Create job</span><span>Assign</span><span>Close out</span></div>
+  <div class="uc-case-bottom"><p><strong>Potential value</strong> · More reliable scheduling and clearer maintenance history.</p><a href="contact.html?industry=assets&use_case=preventive-maintenance#enquiry-form" class="uc-text-link">Discuss this use case <span aria-hidden="true">↗</span></a></div>
+</article><article class="uc-case-card" id="inventory-reconciliation" data-uc-card>
+  <div class="uc-case-top"><span class="uc-case-type">Asset management</span><span class="uc-case-arrow" aria-hidden="true">↗</span></div>
+  <h3>Inventory reconciliation</h3>
+  <div class="uc-block"><span class="uc-kicker">THE CHALLENGE</span><p>Recorded assets do not always match items deployed, in storage or returned by staff.</p></div>
+  <div class="uc-block"><span class="uc-kicker">THE APPROACH</span><p>Compare inventory exports, detect missing or duplicate records and create reconciliation tasks for authorised staff.</p></div>
+  <div class="uc-stage-row" aria-label="Example workflow"><span>Import</span><span>Compare</span><span>Flag gaps</span><span>Resolve</span></div>
+  <div class="uc-case-bottom"><p><strong>Potential value</strong> · More accurate registers and less time spent on manual stocktakes.</p><a href="contact.html?industry=assets&use_case=inventory-reconciliation#enquiry-form" class="uc-text-link">Discuss this use case <span aria-hidden="true">↗</span></a></div>
+</article></div>
+</section><section class="uc-industry-block" id="retail" data-uc-industry="retail">
+  <div class="uc-industry-header"><div class="uc-industry-icon" aria-hidden="true">◇</div><div><span class="uc-industry-eyebrow">RETAIL · 03 USE CASES</span><h2>Retail</h2><p>Connect sales, inventory and customer enquiries without adding extra admin.</p></div></div>
+  <div class="uc-card-grid"><article class="uc-case-card" id="retail-replenishment" data-uc-card>
+  <div class="uc-case-top"><span class="uc-case-type">Retail</span><span class="uc-case-arrow" aria-hidden="true">↗</span></div>
+  <h3>Low-stock &amp; replenishment alerts</h3>
+  <div class="uc-block"><span class="uc-kicker">THE CHALLENGE</span><p>Stores discover popular items are out of stock or reorder too late.</p></div>
+  <div class="uc-block"><span class="uc-kicker">THE APPROACH</span><p>Monitor inventory thresholds and sales velocity, suggest replenishment quantities and route purchase orders for review.</p></div>
+  <div class="uc-stage-row" aria-label="Example workflow"><span>Monitor stock</span><span>Detect risk</span><span>Suggest reorder</span><span>Approve</span></div>
+  <div class="uc-case-bottom"><p><strong>Potential value</strong> · Fewer avoidable stockouts and better replenishment planning.</p><a href="contact.html?industry=retail&use_case=retail-replenishment#enquiry-form" class="uc-text-link">Discuss this use case <span aria-hidden="true">↗</span></a></div>
+</article><article class="uc-case-card" id="retail-enquiries" data-uc-card>
+  <div class="uc-case-top"><span class="uc-case-type">Retail</span><span class="uc-case-arrow" aria-hidden="true">↗</span></div>
+  <h3>Customer enquiry assistant</h3>
+  <div class="uc-block"><span class="uc-kicker">THE CHALLENGE</span><p>Staff repeatedly answer the same delivery, returns and product-availability questions.</p></div>
+  <div class="uc-block"><span class="uc-kicker">THE APPROACH</span><p>Use a grounded assistant for approved FAQs and send uncertain or sensitive questions to staff.</p></div>
+  <div class="uc-stage-row" aria-label="Example workflow"><span>Receive</span><span>Answer FAQ</span><span>Escalate</span><span>Record</span></div>
+  <div class="uc-case-bottom"><p><strong>Potential value</strong> · Faster routine responses and more staff capacity for in-store service.</p><a href="contact.html?industry=retail&use_case=retail-enquiries#enquiry-form" class="uc-text-link">Discuss this use case <span aria-hidden="true">↗</span></a></div>
+</article><article class="uc-case-card" id="retail-performance" data-uc-card>
+  <div class="uc-case-top"><span class="uc-case-type">Retail</span><span class="uc-case-arrow" aria-hidden="true">↗</span></div>
+  <h3>Daily store performance digest</h3>
+  <div class="uc-block"><span class="uc-kicker">THE CHALLENGE</span><p>Store managers combine sales, returns and stock figures from multiple reports every day.</p></div>
+  <div class="uc-block"><span class="uc-kicker">THE APPROACH</span><p>Prepare a scheduled daily digest, highlight unusual trends and distribute a review-ready summary.</p></div>
+  <div class="uc-stage-row" aria-label="Example workflow"><span>Collect data</span><span>Compare</span><span>Summarise</span><span>Review</span></div>
+  <div class="uc-case-bottom"><p><strong>Potential value</strong> · Less report preparation and quicker operational decisions.</p><a href="contact.html?industry=retail&use_case=retail-performance#enquiry-form" class="uc-text-link">Discuss this use case <span aria-hidden="true">↗</span></a></div>
+</article></div>
+</section><section class="uc-industry-block" id="councils" data-uc-industry="councils">
+  <div class="uc-industry-header"><div class="uc-industry-icon" aria-hidden="true">⌂</div><div><span class="uc-industry-eyebrow">COUNCILS · 03 USE CASES</span><h2>Local councils</h2><p>Improve request routing, transparent updates and routine administrative workflows.</p></div></div>
+  <div class="uc-card-grid"><article class="uc-case-card" id="resident-request-triage" data-uc-card>
+  <div class="uc-case-top"><span class="uc-case-type">Local councils</span><span class="uc-case-arrow" aria-hidden="true">↗</span></div>
+  <h3>Resident request triage</h3>
+  <div class="uc-block"><span class="uc-kicker">THE CHALLENGE</span><p>Pothole, footpath, tree and other reports arrive through multiple channels and need manual routing.</p></div>
+  <div class="uc-block"><span class="uc-kicker">THE APPROACH</span><p>Classify requests, identify the responsible team, create work items and keep residents informed of progress.</p></div>
+  <div class="uc-stage-row" aria-label="Example workflow"><span>Report issue</span><span>Classify</span><span>Assign team</span><span>Update resident</span></div>
+  <div class="uc-case-bottom"><p><strong>Potential value</strong> · Faster handoffs and more transparent request tracking.</p><a href="contact.html?industry=councils&use_case=resident-request-triage#enquiry-form" class="uc-text-link">Discuss this use case <span aria-hidden="true">↗</span></a></div>
+</article><article class="uc-case-card" id="permit-processing" data-uc-card>
+  <div class="uc-case-top"><span class="uc-case-type">Local councils</span><span class="uc-case-arrow" aria-hidden="true">↗</span></div>
+  <h3>Permit application completeness checks</h3>
+  <div class="uc-block"><span class="uc-kicker">THE CHALLENGE</span><p>Staff spend time checking applications for missing information and chasing supporting documents.</p></div>
+  <div class="uc-block"><span class="uc-kicker">THE APPROACH</span><p>Check submissions against published requirements, flag missing items and route completed packs to authorised reviewers.</p></div>
+  <div class="uc-stage-row" aria-label="Example workflow"><span>Submit</span><span>Check documents</span><span>Request missing</span><span>Review</span></div>
+  <div class="uc-case-bottom"><p><strong>Potential value</strong> · Fewer incomplete applications entering the review queue.</p><a href="contact.html?industry=councils&use_case=permit-processing#enquiry-form" class="uc-text-link">Discuss this use case <span aria-hidden="true">↗</span></a></div>
+</article><article class="uc-case-card" id="council-maintenance" data-uc-card>
+  <div class="uc-case-top"><span class="uc-case-type">Local councils</span><span class="uc-case-arrow" aria-hidden="true">↗</span></div>
+  <h3>Waste &amp; facilities requests</h3>
+  <div class="uc-block"><span class="uc-kicker">THE CHALLENGE</span><p>Missed-bin reports, damaged assets and park maintenance tasks are tracked across emails and spreadsheets.</p></div>
+  <div class="uc-block"><span class="uc-kicker">THE APPROACH</span><p>Standardise intake, assign work orders, track contractor updates and notify requestors on completion.</p></div>
+  <div class="uc-stage-row" aria-label="Example workflow"><span>Capture</span><span>Create work order</span><span>Track</span><span>Notify</span></div>
+  <div class="uc-case-bottom"><p><strong>Potential value</strong> · More consistent service coordination and fewer status-chasing calls.</p><a href="contact.html?industry=councils&use_case=council-maintenance#enquiry-form" class="uc-text-link">Discuss this use case <span aria-hidden="true">↗</span></a></div>
+</article></div>
+</section><section class="uc-industry-block" id="schools" data-uc-industry="schools">
+  <div class="uc-industry-header"><div class="uc-industry-icon" aria-hidden="true">✳</div><div><span class="uc-industry-eyebrow">SCHOOLS · 03 USE CASES</span><h2>Schools</h2><p>Support school operations, parent communications and everyday IT processes.</p></div></div>
+  <div class="uc-card-grid"><article class="uc-case-card" id="school-enrolment" data-uc-card>
+  <div class="uc-case-top"><span class="uc-case-type">Schools</span><span class="uc-case-arrow" aria-hidden="true">↗</span></div>
+  <h3>Enrolment administration</h3>
+  <div class="uc-block"><span class="uc-kicker">THE CHALLENGE</span><p>Application forms and required documents need repeated manual checking and follow-up.</p></div>
+  <div class="uc-block"><span class="uc-kicker">THE APPROACH</span><p>Securely capture application materials, check completeness and route applications to authorised administration staff.</p></div>
+  <div class="uc-stage-row" aria-label="Example workflow"><span>Collect</span><span>Check</span><span>Follow up</span><span>Review</span></div>
+  <div class="uc-case-bottom"><p><strong>Potential value</strong> · Less paperwork and clearer status tracking for staff.</p><a href="contact.html?industry=schools&use_case=school-enrolment#enquiry-form" class="uc-text-link">Discuss this use case <span aria-hidden="true">↗</span></a></div>
+</article><article class="uc-case-card" id="parent-communications" data-uc-card>
+  <div class="uc-case-top"><span class="uc-case-type">Schools</span><span class="uc-case-arrow" aria-hidden="true">↗</span></div>
+  <h3>School knowledge assistant</h3>
+  <div class="uc-block"><span class="uc-kicker">THE CHALLENGE</span><p>Staff answer routine questions about term dates, uniforms, events and school policies many times.</p></div>
+  <div class="uc-block"><span class="uc-kicker">THE APPROACH</span><p>Offer an assistant that draws only from approved school information and directs sensitive matters to staff.</p></div>
+  <div class="uc-stage-row" aria-label="Example workflow"><span>Ask</span><span>Search approved info</span><span>Answer</span><span>Escalate</span></div>
+  <div class="uc-case-bottom"><p><strong>Potential value</strong> · Faster access to school information and fewer repetitive queries.</p><a href="contact.html?industry=schools&use_case=parent-communications#enquiry-form" class="uc-text-link">Discuss this use case <span aria-hidden="true">↗</span></a></div>
+</article><article class="uc-case-card" id="school-it" data-uc-card>
+  <div class="uc-case-top"><span class="uc-case-type">Schools</span><span class="uc-case-arrow" aria-hidden="true">↗</span></div>
+  <h3>Device allocation &amp; IT requests</h3>
+  <div class="uc-block"><span class="uc-kicker">THE CHALLENGE</span><p>Laptop allocations, onboarding and IT support requests require coordination across several teams.</p></div>
+  <div class="uc-block"><span class="uc-kicker">THE APPROACH</span><p>Track device assignments, collect support requests and orchestrate approved access and setup tasks.</p></div>
+  <div class="uc-stage-row" aria-label="Example workflow"><span>Request</span><span>Approve</span><span>Assign device</span><span>Record</span></div>
+  <div class="uc-case-bottom"><p><strong>Potential value</strong> · Simpler handoffs and better device accountability.</p><a href="contact.html?industry=schools&use_case=school-it#enquiry-form" class="uc-text-link">Discuss this use case <span aria-hidden="true">↗</span></a></div>
+</article></div>
+</section><section class="uc-industry-block" id="tradies" data-uc-industry="tradies">
+  <div class="uc-industry-header"><div class="uc-industry-icon" aria-hidden="true">⌘</div><div><span class="uc-industry-eyebrow">TRADIES · 03 USE CASES</span><h2>Trades &amp; field services</h2><p>Help small service businesses move from enquiry to quote, job and invoice.</p></div></div>
+  <div class="uc-card-grid"><article class="uc-case-card" id="tradie-quote" data-uc-card>
+  <div class="uc-case-top"><span class="uc-case-type">Trades &amp; field services</span><span class="uc-case-arrow" aria-hidden="true">↗</span></div>
+  <h3>Enquiry-to-quote workflow</h3>
+  <div class="uc-block"><span class="uc-kicker">THE CHALLENGE</span><p>Job enquiries arrive by phone, email or social media and quotes are prepared manually after hours.</p></div>
+  <div class="uc-block"><span class="uc-kicker">THE APPROACH</span><p>Capture job details in one form, organise requests and prepare a quote draft for the tradesperson to check.</p></div>
+  <div class="uc-stage-row" aria-label="Example workflow"><span>Enquiry</span><span>Capture details</span><span>Draft quote</span><span>Approve</span></div>
+  <div class="uc-case-bottom"><p><strong>Potential value</strong> · Faster responses and less evening administration.</p><a href="contact.html?industry=tradies&use_case=tradie-quote#enquiry-form" class="uc-text-link">Discuss this use case <span aria-hidden="true">↗</span></a></div>
+</article><article class="uc-case-card" id="tradie-scheduling" data-uc-card>
+  <div class="uc-case-top"><span class="uc-case-type">Trades &amp; field services</span><span class="uc-case-arrow" aria-hidden="true">↗</span></div>
+  <h3>Job scheduling &amp; reminders</h3>
+  <div class="uc-block"><span class="uc-kicker">THE CHALLENGE</span><p>Appointments and customer updates are coordinated through calls and individual text messages.</p></div>
+  <div class="uc-block"><span class="uc-kicker">THE APPROACH</span><p>Create appointments from approved jobs, send reminders and provide a simple rescheduling workflow.</p></div>
+  <div class="uc-stage-row" aria-label="Example workflow"><span>Book job</span><span>Confirm</span><span>Remind</span><span>Update</span></div>
+  <div class="uc-case-bottom"><p><strong>Potential value</strong> · Clearer schedules and fewer missed appointments.</p><a href="contact.html?industry=tradies&use_case=tradie-scheduling#enquiry-form" class="uc-text-link">Discuss this use case <span aria-hidden="true">↗</span></a></div>
+</article><article class="uc-case-card" id="tradie-invoicing" data-uc-card>
+  <div class="uc-case-top"><span class="uc-case-type">Trades &amp; field services</span><span class="uc-case-arrow" aria-hidden="true">↗</span></div>
+  <h3>Job completion to invoice</h3>
+  <div class="uc-block"><span class="uc-kicker">THE CHALLENGE</span><p>Finished jobs wait to be invoiced while notes, photos and material costs are gathered.</p></div>
+  <div class="uc-block"><span class="uc-kicker">THE APPROACH</span><p>Convert approved completion notes, labour and materials into a draft invoice ready for review.</p></div>
+  <div class="uc-stage-row" aria-label="Example workflow"><span>Complete job</span><span>Log costs</span><span>Draft invoice</span><span>Approve</span></div>
+  <div class="uc-case-bottom"><p><strong>Potential value</strong> · Faster billing and less administrative backlog.</p><a href="contact.html?industry=tradies&use_case=tradie-invoicing#enquiry-form" class="uc-text-link">Discuss this use case <span aria-hidden="true">↗</span></a></div>
+</article></div>
+</section><section class="uc-industry-block" id="healthcare" data-uc-industry="healthcare">
+  <div class="uc-industry-header"><div class="uc-industry-icon" aria-hidden="true">✚</div><div><span class="uc-industry-eyebrow">HEALTHCARE · 03 USE CASES</span><h2>Healthcare operations</h2><p>Focus on non-clinical workflows with privacy safeguards and authorised oversight.</p></div></div>
+  <div class="uc-card-grid"><article class="uc-case-card" id="healthcare-appointments" data-uc-card>
+  <div class="uc-case-top"><span class="uc-case-type">Healthcare operations</span><span class="uc-case-arrow" aria-hidden="true">↗</span></div>
+  <h3>Appointment administration</h3>
+  <div class="uc-block"><span class="uc-kicker">THE CHALLENGE</span><p>Reception teams spend considerable time handling reminders, reschedules and routine appointment questions.</p></div>
+  <div class="uc-block"><span class="uc-kicker">THE APPROACH</span><p>Automate permitted appointment notifications and scheduling follow-ups through approved practice systems.</p></div>
+  <div class="uc-stage-row" aria-label="Example workflow"><span>Book</span><span>Confirm</span><span>Remind</span><span>Reschedule</span></div>
+  <div class="uc-case-bottom"><p><strong>Potential value</strong> · Less repetitive reception work and clearer appointment communication.</p><a href="contact.html?industry=healthcare&use_case=healthcare-appointments#enquiry-form" class="uc-text-link">Discuss this use case <span aria-hidden="true">↗</span></a></div>
+</article><article class="uc-case-card" id="healthcare-referrals" data-uc-card>
+  <div class="uc-case-top"><span class="uc-case-type">Healthcare operations</span><span class="uc-case-arrow" aria-hidden="true">↗</span></div>
+  <h3>Referral administration</h3>
+  <div class="uc-block"><span class="uc-kicker">THE CHALLENGE</span><p>Referral documents need administrative checks, tracking and routing between teams.</p></div>
+  <div class="uc-block"><span class="uc-kicker">THE APPROACH</span><p>Securely check required fields, flag missing information and route referrals to authorised staff for clinical assessment.</p></div>
+  <div class="uc-stage-row" aria-label="Example workflow"><span>Receive securely</span><span>Check fields</span><span>Route</span><span>Clinician review</span></div>
+  <div class="uc-case-bottom"><p><strong>Potential value</strong> · Better referral tracking without automating clinical judgment.</p><a href="contact.html?industry=healthcare&use_case=healthcare-referrals#enquiry-form" class="uc-text-link">Discuss this use case <span aria-hidden="true">↗</span></a></div>
+</article><article class="uc-case-card" id="healthcare-stock" data-uc-card>
+  <div class="uc-case-top"><span class="uc-case-type">Healthcare operations</span><span class="uc-case-arrow" aria-hidden="true">↗</span></div>
+  <h3>Equipment &amp; consumables tracking</h3>
+  <div class="uc-block"><span class="uc-kicker">THE CHALLENGE</span><p>Supplies and medical equipment need regular stock checking, maintenance and replenishment.</p></div>
+  <div class="uc-block"><span class="uc-kicker">THE APPROACH</span><p>Track thresholds and maintenance dates, create restocking requests and notify responsible staff.</p></div>
+  <div class="uc-stage-row" aria-label="Example workflow"><span>Monitor</span><span>Alert</span><span>Request stock</span><span>Confirm</span></div>
+  <div class="uc-case-bottom"><p><strong>Potential value</strong> · Better stock visibility and less manual tracking.</p><a href="contact.html?industry=healthcare&use_case=healthcare-stock#enquiry-form" class="uc-text-link">Discuss this use case <span aria-hidden="true">↗</span></a></div>
+</article></div>
+</section></div>
+  <div class="uc-empty" id="uc-empty" hidden><h3>No matching use cases</h3><p>Try another keyword or show all industries.</p><button type="button" id="uc-reset" class="btn btn-mint">Clear filters</button></div>
+  <div class="uc-safety-note"><span aria-hidden="true">✳</span><p><strong>Responsible by design.</strong> Examples are illustrative, not client case studies. Financial postings, permit decisions, student or patient data, and clinical matters require suitable permissions, privacy controls and human review. Solutions are tailored to applicable rules and existing systems.</p></div>
+</div></section>
+<section class="contact-section"><div class="container"><div class="contact-card"><div><span class="eyebrow">LET'S TALK</span><h2>Your next automation could start with one small process.</h2><p>Show us the busywork holding your team back. We’ll help you explore a practical, measurable first step.</p></div><div class="contact-action"><a class="btn" href="contact.html#enquiry-form">Discuss a use case ↗</a><span>No commitment to start a conversation</span></div></div></div></section>
+</main><footer class="site-footer"><div class="container">
+<div class="footer-grid"><div><a class="brand" href="index.html" aria-label="Evola home">
+      <img class="evola-symbol" src="evola-symbol.png" alt="" width="385" height="273"/>
+      <span><span class="brand-name">Evola</span><span class="brand-label">IT Solutions</span></span></a><p class="footer-description">Practical automation, AI training and managed services designed to make work easier and operations more reliable.</p></div>
+<div><h3 class="footer-heading">Explore</h3><div class="footer-list"><a href="index.html">Home</a><a href="services.html">Services</a><a href="solutions.html">Solutions</a>
+<a href="use-cases.html">Industries</a><a href="ai-training.html">AI Training</a><a href="about.html">About</a><a href="contact.html">Contact</a></div></div>
+<div><h3 class="footer-heading">Get in touch</h3><div class="footer-list"><a href="mailto:hello@yourdomain.com">hello@yourdomain.com</a><a href="contact.html">Start a conversation</a><a href="#top">Back to top ↑</a></div></div></div>
+<div class="footer-bottom"><span>© <span class="js-year">2026</span> Evola. All rights reserved.</span><span>Made to simplify complex work.</span></div>
+</div></footer><script src="script.js?v=4" defer></script><script src="usecases.js?v=2" defer></script></body></html>

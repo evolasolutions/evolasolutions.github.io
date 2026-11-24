@@ -1,0 +1,42 @@
+/* Evola identity, adapted from the supplied logo. */
+.brand .evola-symbol{display:block;width:53px;height:39px;object-fit:contain;flex:0 0 auto;filter:drop-shadow(0 0 8px rgba(33,193,190,.12))}
+.brand .brand-name{font-size:24px;font-weight:850;letter-spacing:1.2px;line-height:1;color:#43c9c8;text-transform:uppercase}
+.brand .brand-label{font-size:9px;letter-spacing:2px;margin-top:5px;color:var(--muted,#aec6d1)}
+html[data-theme="light"] .brand .brand-name{color:#087e83}
+@media(max-width:650px){.brand .evola-symbol{width:43px;height:32px}.brand .brand-name{font-size:20px}.brand .brand-label{font-size:8px;letter-spacing:1.5px}}
+/* Native same-origin document transitions; unsupported browsers navigate normally. */
+@view-transition{navigation:auto}
+::view-transition-old(root){animation: evola-page-out .24s ease both}
+::view-transition-new(root){animation: evola-page-in .38s ease both}
+@keyframes evola-page-out{to{opacity:0}}
+@keyframes evola-page-in{from{opacity:0}to{opacity:1}}
+@media(prefers-reduced-motion:reduce){@view-transition{navigation:none}::view-transition-old(root),::view-transition-new(root){animation:none}}
+
+/* Wide desktop framing: keep the reading-width containers below the hero. */
+@media (min-width:851px) {
+  .site-header .nav-inner.container,
+  .lp-main .lp-carousel-inner.container {
+    width:96%; max-width:1800px; padding-left:0; padding-right:0;
+  }
+  .lp-carousel .lp-hero-inner {
+    grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);
+    gap:clamp(28px,3.5vw,66px);
+  }
+  .lp-carousel .lp-hero-visual {width:100%; max-width:none;}
+  .lp-carousel .lp-flow-board {width:100%; max-width:none; margin:0;}
+}
+@media (min-width:1061px) {
+  .lp-carousel .lp-slide-title {
+    font-size:clamp(76px,6.7vw,110px); max-width:none;
+    overflow-wrap:break-word;
+  }
+  .lp-carousel .lp-hero-copy>p {max-width:660px; font-size:18px;}
+  .lp-carousel .lp-board-body {padding:clamp(28px,2.7vw,46px);}
+  .lp-carousel .lp-board-top {padding:20px 26px;}
+  .lp-carousel .lp-board-body h2 {font-size:clamp(26px,2.1vw,34px);}
+  .lp-carousel .lp-board-row {padding:15px;}
+  .lp-carousel .lp-board-row strong {font-size:15px;}
+  .lp-carousel .lp-board-row small {font-size:12px;}
+}
+/* Straight, level illustration in every slide and both colour schemes. */
+.lp-carousel .lp-flow-board {transform:none; perspective:none;}

@@ -1,0 +1,59 @@
+/* Shared full-width enterprise layout. Loaded last on every page. */
+:root {
+  --ev-page-gutter: max(16px, 2vw);
+  --ev-header-height: 82px;
+}
+/* Match every major content rail to the header, without a desktop width cap. */
+.container,
+.lp-main .container,
+.site-header .nav-inner.container,
+.lp-main .lp-carousel-inner.container {
+  box-sizing: border-box;
+  width: calc(100% - 2 * var(--ev-page-gutter));
+  max-width: none;
+  margin-inline: auto;
+  padding-inline: 0;
+}
+/* Section backgrounds span the entire viewport; the shared gutter is internal. */
+main, .site-header, .site-footer { width: 100%; max-width: none; }
+.lp-main .lp-hero {
+  min-height: calc(100vh - var(--ev-header-height));
+  min-height: calc(100dvh - var(--ev-header-height));
+}
+.lp-main .lp-carousel-inner.container {
+  min-height: inherit;
+  margin-block: 0;
+  padding-block: 0 24px;
+}
+.lp-carousel .lp-slides { flex: 1 1 auto; }
+.lp-carousel .lp-hero-inner {
+  height: 100%;
+  min-height: 0;
+  padding-block: clamp(38px, 6vh, 76px);
+}
+.lp-carousel .lp-hero-copy {
+  width: min(1150px, 100%);
+  max-width: none;
+  padding-inline: 0;
+}
+.lp-carousel .lp-hero-copy > p { max-width: 65ch; }
+/* Wider panels without turning long prose into edge-to-edge lines. */
+.section-intro, .page-hero p, .lp-section-heading p,
+.lp-example-copy > p, .lp-outro p, .ev-faq-layout > div:first-child > p,
+.split-article p, .panel-grid p, .uc-contact-layout > div:first-child > p {
+  max-width: 70ch;
+}
+.lp-help-card p, .detail-card p, .track-card p, .principle p,
+.contact-option p, .uc-card p, .ev-faq details p { max-width: 70ch; }
+/* Wide-screen card groups expand naturally with the content rail. */
+@media (min-width: 1440px) {
+  .lp-help-grid, .detail-grid, .track-grid, .contact-options,
+  .uc-card-grid, .uc-feature-grid, .principles-grid { gap: clamp(20px, 1.6vw, 40px); }
+  .lp-help-card, .detail-card, .track-card, .contact-option, .principle { padding: clamp(28px, 2.1vw, 52px); }
+}
+@media (max-width: 1050px) { :root { --ev-header-height: 72px; } }
+@media (max-width: 650px) {
+  .lp-main .lp-carousel-inner.container { padding-bottom: 12px; }
+  .lp-carousel .lp-hero-inner { padding-block: 44px 28px; }
+  .lp-carousel .lp-slide-title { font-size: clamp(38px, 10vw, 65px); overflow-wrap: anywhere; }
+}

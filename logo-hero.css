@@ -1,0 +1,60 @@
+/* Brand-led hero: local Evola artwork, independent 3D-style spin and compact layout. */
+.lp-main .lp-hero {
+  min-height: clamp(450px, 67vh, 780px);
+  min-height: clamp(450px, 67dvh, 780px);
+  background: radial-gradient(ellipse at 77% 48%, #104748 0%, transparent 46%), linear-gradient(115deg,#061421,#0a202e 68%,#0b3035);
+}
+.lp-main .lp-carousel-inner.container { min-height: inherit; padding-block: 0 12px; }
+.lp-carousel .lp-hero-inner { min-height: 0; padding-block: clamp(28px,4vh,60px); }
+.lp-carousel .lp-hero-copy { width: 53%; max-width: 1050px; }
+.lp-carousel .lp-slide-title { font-size: clamp(50px,6.4vw,108px); margin: 20px 0 24px; line-height: 1.02; text-wrap: initial; }
+.lp-carousel .lp-hero-copy > p { font-size: clamp(16px,1.35vw,20px); max-width: 55ch; margin-bottom: 22px; }
+.lp-carousel .lp-hero-note { margin-top: 20px; }
+.lp-carousel-controls { padding: 0; }
+.ev-logo-scene { overflow: hidden; }
+.ev-logo-ambient { position:absolute; inset:0; background: radial-gradient(ellipse at 79% 45%,#37cfb21f,transparent 44%); animation: ev-logo-breathe 9s ease-in-out infinite alternate; }
+.ev-logo-stage { position:absolute; right:2%; width:44%; top:50%; height:92%; transform:translateY(-50%); display:grid; place-items:center; }
+.ev-logo-halo { position:absolute; width:88%; aspect-ratio:1; max-width:570px; border-radius:50%; background:radial-gradient(circle,#30d7c227 0%,#1b8e9020 36%,transparent 69%); filter:blur(10px); }
+.ev-logo-float { position:relative; width:min(78%,490px); aspect-ratio:385/273; animation: ev-logo-float 6s ease-in-out infinite; z-index:2; }
+.ev-logo-perspective { position:absolute; inset:0; perspective:1100px; perspective-origin:50% 50%; }
+.ev-logo-spin { position:absolute; inset:0; transform-style:preserve-3d; animation: ev-logo-turn 20s linear infinite; }
+.ev-logo-layer { position:absolute; inset:0; width:100%; height:100%; object-fit:contain; transform:translateZ(var(--depth)); backface-visibility:visible; user-select:none; }
+.ev-logo-edge { filter:brightness(.58) saturate(1.2); }
+.ev-logo-face { filter:drop-shadow(0 0 7px #50e7d44d); }
+.ev-orbit-ring { position:absolute; width:93%; max-width:610px; aspect-ratio:2.45; border:1px solid #65e4d038; border-radius:50%; }
+.ev-orbit-ring-one { transform:rotate(-24deg); }
+.ev-orbit-ring-two { transform:rotate(27deg); width:83%; border-color:#6de2d024; }
+.ev-orbit-particles { position:absolute; width:93%; max-width:610px; aspect-ratio:1; transform:rotate(-24deg) scaleY(.41); }
+.ev-orbit-particle { position:absolute; left:50%; top:0; width:7px; height:7px; border-radius:50%; background:#9affea; box-shadow:0 0 12px 3px #60e4c98c; transform-origin:50% calc(50% + (min(100cqw,610px) - 7px)/2); animation: ev-orbit-dot 14s linear infinite; animation-delay:var(--phase); }
+/* Use percentage offsets on a rotating orbit holder so paths remain proportional. */
+.ev-orbit-particles { container-type:inline-size; }
+.ev-orbit-particle { inset:0; width:100%; height:100%; background:none; box-shadow:none; transform-origin:center; border-radius:0; }
+.ev-orbit-particle::after { content:""; position:absolute; top:0; left:50%; width:7px; height:7px; border-radius:50%; background:#9affea; box-shadow:0 0 12px 3px #60e4c98c; transform:translate(-50%,-50%) scaleY(2.4); }
+@keyframes ev-logo-turn { from{transform:rotateY(0deg) rotateX(5deg)} to{transform:rotateY(360deg) rotateX(5deg)} }
+@keyframes ev-logo-float { 0%,100%{transform:translateY(-5px)} 50%{transform:translateY(9px)} }
+@keyframes ev-logo-breathe { from{opacity:.55} to{opacity:1} }
+@keyframes ev-orbit-dot { from{transform:rotate(0deg) scale(var(--orbit-scale))} to{transform:rotate(360deg) scale(var(--orbit-scale))} }
+html[data-theme="light"] .lp-main .lp-hero { background:radial-gradient(ellipse at 78% 48%,#b4e7df,transparent 54%),linear-gradient(110deg,#f5fbfb,#e8f5f2); }
+html[data-theme="light"] .ev-logo-halo { background:radial-gradient(circle,#2dc5ba24,transparent 69%); }
+html[data-theme="light"] .ev-orbit-ring { border-color:#168c8560; }
+html[data-theme="light"] .ev-orbit-particle::after { background:#148c84; box-shadow:0 0 9px 2px #1da99c45; }
+@media(max-width:850px) {
+  .lp-main .lp-hero { min-height:0; }
+  .lp-main .lp-carousel-inner.container { min-height:0; padding-bottom:8px; }
+  .lp-carousel .lp-hero-inner { padding:36px 0 235px; }
+  .lp-carousel .lp-hero-copy { width:100%; max-width:100%; }
+  .lp-carousel .lp-slide-title { font-size:clamp(42px,8.5vw,76px); margin:18px 0 20px; }
+  .ev-logo-stage { width:min(72%,330px); height:220px; top:auto; bottom:48px; right:50%; transform:translateX(50%); }
+  .ev-logo-float { width:min(76%,235px); }
+  .ev-logo-halo { width:82%; }
+}
+@media(max-width:420px) {
+  .lp-carousel .lp-hero-inner { padding:30px 0 195px; }
+  .lp-carousel .lp-slide-title { font-size:clamp(38px,10.5vw,49px); }
+  .lp-carousel .lp-hero-note { margin-top:14px; }
+  .ev-logo-stage { height:180px; bottom:45px; width:75%; }
+  .ev-logo-float { width:min(75%,195px); }
+}
+@media(prefers-reduced-motion:reduce) {
+  .ev-logo-spin,.ev-logo-float,.ev-logo-ambient,.ev-orbit-particle { animation:none!important; }
+}
