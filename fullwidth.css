@@ -57,3 +57,21 @@ main, .site-header, .site-footer { width: 100%; max-width: none; }
   .lp-carousel .lp-hero-inner { padding-block: 44px 28px; }
   .lp-carousel .lp-slide-title { font-size: clamp(38px, 10vw, 65px); overflow-wrap: anywhere; }
 }
+
+/* Services page hero consistency */
+@media (min-width: 851px) {
+  .ev-service-hero .ev-photo {
+    max-width: 600px;
+    width: 100%;
+    justify-self: end;
+  }
+
+  .ev-service-hero .ev-photo-frame {
+    aspect-ratio: 16 / 9;
+    max-height: 320px;
+  }
+
+  .ev-service-hero .ev-photo img {
+    object-fit: cover;
+  }
+}
