@@ -23,7 +23,7 @@ No backend or build step is required.
 
 ## To customise before launch
 
-- Replace `hello@yourdomain.com` with the real business contact email.
+- The business contact email is `evolasolutions@outlook.com`.
 - The Contact page currently prepares an email draft instead of submitting to Formspree.
 - Use-case examples are illustrative potential workflows, not claims about completed customer projects.
 

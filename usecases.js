@@ -101,7 +101,7 @@
     e.preventDefault();
     const draft = makeDraft();
     if (!draft) return;
-    const url = 'mailto:hello@yourdomain.com?subject=' + encodeURIComponent(draft.subject) + '&body=' + encodeURIComponent(draft.body);
+    const url = 'mailto:evolasolutions@outlook.com?subject=' + encodeURIComponent(draft.subject) + '&body=' + encodeURIComponent(draft.body);
     if (feedback) feedback.textContent = 'Your email app should open with a draft. Review it and press Send in your email app; this website has not sent anything.';
     window.location.href = url;
   });
@@ -110,7 +110,7 @@
     if (!draft) return;
     try {
       await navigator.clipboard.writeText(draft.subject + '\n\n' + draft.body);
-      if (feedback) feedback.textContent = 'Enquiry copied. Paste it into an email to hello@yourdomain.com and send it yourself.';
+      if (feedback) feedback.textContent = 'Enquiry copied. Paste it into an email to evolasolutions@outlook.com and send it yourself.';
     } catch (_) {
       if (feedback) feedback.textContent = 'Your browser blocked clipboard access. Please use the email button or copy your message manually.';
     }
