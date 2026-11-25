@@ -24,7 +24,7 @@ No backend or build step is required.
 ## To customise before launch
 
 - The business contact email is `evolasolutions@outlook.com`.
-- The Contact page currently prepares an email draft instead of submitting to Formspree.
+- The Contact page submits directly to Formspree (https://formspree.io/f/mljbakod). Configure and verify the recipient in the Formspree dashboard.
 - Use-case examples are illustrative potential workflows, not claims about completed customer projects.
 
 ## Homepage carousel
@@ -47,7 +47,7 @@ The Industries menu uses desktop hover with a small pointer bridge and delayed c
 - Two-column Industries mega menu opens on desktop hover, with tap and keyboard support.
 - Ask Evola FAQ uses native HTML disclosure controls.
 - The carousel and background respect reduced-motion preferences.
-- All seven pages and 21 illustrative use cases remain. The contact form still opens an email draft; configure your email or Formspree separately.
+- All seven pages and 21 illustrative use cases remain. The contact form submits directly to Formspree.
 
 ### Illustrative photography
 

@@ -75,44 +75,30 @@
     const option = useCase.selectedOptions[0];
     if (option?.dataset.industry) selectIfValid(industry, option.dataset.industry);
   });
-  function makeDraft() {
-    if (!form.reportValidity()) return null;
-    const data = new FormData(form);
-    const label = name => form.elements[name]?.selectedOptions?.[0]?.textContent?.trim() || 'Not specified';
-    const name = String(data.get('name') || '').trim();
-    const email = String(data.get('email') || '').trim();
-    const message = String(data.get('message') || '').trim();
-    if (!name || !email || !message) return null;
-    const interest = label('use_case') === 'Choose an example (optional)' ? 'General enquiry' : label('use_case');
-    const subject = 'Evola enquiry - ' + interest;
-    const body = [
-      'Hello Evola,','',
-      'I would like to discuss a business workflow.','',
-      'Name: ' + name,
-      'Email: ' + email,
-      'Industry / team: ' + label('industry'),
-      'Service area: ' + label('service'),
-      'Use case: ' + interest,'',
-      'My challenge / requirements:',message
-    ].join('\n');
-    return {subject,body};
-  }
-  form.addEventListener('submit', e => {
+  const submitButton = form.querySelector('button[type="submit"]');
+  let submitting = false;
+  form.addEventListener('submit', async e => {
     e.preventDefault();
-    const draft = makeDraft();
-    if (!draft) return;
-    const url = 'mailto:evolasolutions@outlook.com?subject=' + encodeURIComponent(draft.subject) + '&body=' + encodeURIComponent(draft.body);
-    if (feedback) feedback.textContent = 'Your email app should open with a draft. Review it and press Send in your email app; this website has not sent anything.';
-    window.location.href = url;
-  });
-  document.getElementById('copy-enquiry')?.addEventListener('click', async () => {
-    const draft = makeDraft();
-    if (!draft) return;
+    if (submitting || !form.reportValidity()) return;
+    submitting = true;
+    submitButton.disabled = true;
+    submitButton.textContent = 'Submitting…';
+    feedback.textContent = 'Sending your enquiry…';
     try {
-      await navigator.clipboard.writeText(draft.subject + '\n\n' + draft.body);
-      if (feedback) feedback.textContent = 'Enquiry copied. Paste it into an email to evolasolutions@outlook.com and send it yourself.';
+      const response = await fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { Accept: 'application/json' }
+      });
+      if (!response.ok) throw new Error('Submission failed');
+      form.reset();
+      feedback.textContent = 'Thank you! Your enquiry has been submitted successfully. We’ll be in touch soon.';
     } catch (_) {
-      if (feedback) feedback.textContent = 'Your browser blocked clipboard access. Please use the email button or copy your message manually.';
+      feedback.textContent = 'We could not confirm your submission. Please try again or email evolasolutions@outlook.com directly.';
+    } finally {
+      submitting = false;
+      submitButton.disabled = false;
+      submitButton.textContent = 'Submit';
     }
   });
 })();
